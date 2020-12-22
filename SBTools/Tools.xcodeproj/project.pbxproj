@@ -22,6 +22,8 @@
 		6DBB5F7F24DA9C2B00596489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DBB5F7E24DA9C2B00596489 /* Assets.xcassets */; };
 		6DBB5F8224DA9C2B00596489 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBB5F8024DA9C2B00596489 /* LaunchScreen.storyboard */; };
 		6DBB5F8524DA9C2B00596489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB5F8424DA9C2B00596489 /* main.m */; };
+		6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */; };
+		6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */; };
 		6DD9751224E696460001BC45 /* SBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751124E696460001BC45 /* SBTools.m */; };
 		6DD9751924E6987D0001BC45 /* SBTools+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751724E6987D0001BC45 /* SBTools+MD5.m */; };
 		6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751B24E6990C0001BC45 /* SBTools+Device.m */; };
@@ -67,6 +69,9 @@
 		6DBB5F8124DA9C2B00596489 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6DBB5F8324DA9C2B00596489 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6DBB5F8424DA9C2B00596489 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDataEmpty.xib; sourceTree = "<group>"; };
+		6DC4ECB62591C5F10083676C /* UITableView+SBDataEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SBDataEmpty.h"; sourceTree = "<group>"; };
+		6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SBDataEmpty.m"; sourceTree = "<group>"; };
 		6DD9751024E696460001BC45 /* SBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTools.h; sourceTree = "<group>"; };
 		6DD9751124E696460001BC45 /* SBTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBTools.m; sourceTree = "<group>"; };
 		6DD9751724E6987D0001BC45 /* SBTools+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBTools+MD5.m"; sourceTree = "<group>"; };
@@ -139,6 +144,7 @@
 		6DB1659525072FC800D1E2AB /* SBToolsKit */ = {
 			isa = PBXGroup;
 			children = (
+				6DC4ECAD2591C5070083676C /* UITableView */,
 				6DB1659625072FC800D1E2AB /* UIImage */,
 				6DB1659725072FC800D1E2AB /* UIButton */,
 				6DB1659A25072FC900D1E2AB /* UIView */,
@@ -256,6 +262,16 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		6DC4ECAD2591C5070083676C /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				6DC4ECB62591C5F10083676C /* UITableView+SBDataEmpty.h */,
+				6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */,
+				6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -316,6 +332,7 @@
 				6DBB5F8224DA9C2B00596489 /* LaunchScreen.storyboard in Resources */,
 				6DBB5F7F24DA9C2B00596489 /* Assets.xcassets in Resources */,
 				6DD9753F24ED1A960001BC45 /* TESTViewController.xib in Resources */,
+				6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */,
 				6DBB5F7D24DA9C2800596489 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,6 +362,7 @@
 				6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */,
 				6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */,
 				6DB165AE25072FEA00D1E2AB /* SBTools+UIImage.m in Sources */,
+				6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */,
 				6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

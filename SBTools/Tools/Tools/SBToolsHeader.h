@@ -46,6 +46,9 @@
 //view圆角 
 #import "UIView+CornerRadius.h"
 
+#import "UITableView+SBDataEmpty.h"
+
+
 
 //宏设置
 #import "SBTools_Macro_Color.h"
