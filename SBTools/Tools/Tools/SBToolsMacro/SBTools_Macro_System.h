@@ -9,6 +9,23 @@
 #ifndef SBTools_Macro_System_h
 #define SBTools_Macro_System_h
 
+// 屏幕的宽
+#define SB_SCREEN_WIDTH                     [[UIScreen mainScreen] bounds].size.width
+
+// 屏幕的高
+#define SB_SCREEN_HEIGHT                    [[UIScreen mainScreen] bounds].size.height
+
+#define SBFRAME (x,y,width,height)          CGRectMake(x, y, width, height)
+
+// 导航栏高度
+#define SB_NAV_BAR_HEIGHT        44
+
+// 状态栏高度
+#define SB_STATUS_BAR_HEIGHT     [[UIApplication sharedApplication] statusBarFrame].size.height
+
+//导航栏高度
+#define SB_NAV_HEIGHT            (SB_STATUS_BAR_HEIGHT + SB_NAV_BAR_HEIGHT)
+
 /**
  *  手机系统的版本
  */
