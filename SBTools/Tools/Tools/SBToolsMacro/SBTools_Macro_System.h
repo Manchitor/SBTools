@@ -15,7 +15,7 @@
 // 屏幕的高
 #define SB_SCREEN_HEIGHT                    [[UIScreen mainScreen] bounds].size.height
 
-#define SBFRAME (x,y,width,height)          CGRectMake(x, y, width, height)
+#define SB_FRAME (x,y,width,height)          CGRectMake(x, y, width, height)
 
 // 导航栏高度
 #define SB_NAV_BAR_HEIGHT        44

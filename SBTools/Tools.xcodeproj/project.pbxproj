@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D3C776925B027FA00C6E62D /* UIView+Shimmering.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */; };
 		6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */; };
+		6D8939BA25B5233500FFC97F /* SBTools+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8939B925B5233500FFC97F /* SBTools+NetWork.m */; };
+		6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */; };
 		6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165922507264600D1E2AB /* SBTools+Albums.m */; };
 		6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659925072FC900D1E2AB /* SBCustomerButton.m */; };
 		6DB165A825072FC900D1E2AB /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659B25072FC900D1E2AB /* UIView+Animation.m */; };
@@ -35,8 +38,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6D3C776725B027FA00C6E62D /* UIView+Shimmering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Shimmering.h"; sourceTree = "<group>"; };
+		6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shimmering.m"; sourceTree = "<group>"; };
 		6D83F4712519A1DF000311CE /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
+		6D8939B825B5233500FFC97F /* SBTools+NetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+NetWork.h"; sourceTree = "<group>"; };
+		6D8939B925B5233500FFC97F /* SBTools+NetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+NetWork.m"; sourceTree = "<group>"; };
+		6DA5368625AED187008BF1A9 /* UILabel+TimerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TimerColor.h"; sourceTree = "<group>"; };
+		6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TimerColor.m"; sourceTree = "<group>"; };
 		6DAF9D7F24E68218001CFD34 /* SBTools_Macro_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_Color.h; sourceTree = "<group>"; };
 		6DAF9D8024E68218001CFD34 /* SBTools_Macro_Font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_Font.h; sourceTree = "<group>"; };
 		6DAF9D8224E68218001CFD34 /* SBTools_Macro_System.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_System.h; sourceTree = "<group>"; };
@@ -108,6 +117,15 @@
 			path = SBToolLibrary;
 			sourceTree = "<group>";
 		};
+		6DA536A525AEF7A9008BF1A9 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				6DA5368625AED187008BF1A9 /* UILabel+TimerColor.h */,
+				6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
 		6DAF9D7124E68218001CFD34 /* SBTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +143,8 @@
 				6DB165922507264600D1E2AB /* SBTools+Albums.m */,
 				6DF494B825905113009B57C3 /* SBTools+NSString.h */,
 				6DF494B925905113009B57C3 /* SBTools+NSString.m */,
+				6D8939B825B5233500FFC97F /* SBTools+NetWork.h */,
+				6D8939B925B5233500FFC97F /* SBTools+NetWork.m */,
 			);
 			path = SBTools;
 			sourceTree = "<group>";
@@ -144,6 +164,7 @@
 		6DB1659525072FC800D1E2AB /* SBToolsKit */ = {
 			isa = PBXGroup;
 			children = (
+				6DA536A525AEF7A9008BF1A9 /* UILabel */,
 				6DC4ECAD2591C5070083676C /* UITableView */,
 				6DB1659625072FC800D1E2AB /* UIImage */,
 				6DB1659725072FC800D1E2AB /* UIButton */,
@@ -182,6 +203,8 @@
 				6DB1659B25072FC900D1E2AB /* UIView+Animation.m */,
 				6D83F4712519A1DF000311CE /* UIView+CornerRadius.h */,
 				6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */,
+				6D3C776725B027FA00C6E62D /* UIView+Shimmering.h */,
+				6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -189,8 +212,8 @@
 		6DB1659D25072FC900D1E2AB /* UITextView */ = {
 			isa = PBXGroup;
 			children = (
-				6DB1659E25072FC900D1E2AB /* SBCustomerTextView.m */,
 				6DB1659F25072FC900D1E2AB /* SBCustomerTextView.h */,
+				6DB1659E25072FC900D1E2AB /* SBCustomerTextView.m */,
 			);
 			path = UITextView;
 			sourceTree = "<group>";
@@ -345,17 +368,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DB165AA25072FC900D1E2AB /* UITextField+MaxLength.m in Sources */,
+				6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */,
 				6DBB5F7A24DA9C2800596489 /* ViewController.m in Sources */,
 				6DB165A825072FC900D1E2AB /* UIView+Animation.m in Sources */,
 				6DD9751924E6987D0001BC45 /* SBTools+MD5.m in Sources */,
 				6DB165B225076B4800D1E2AB /* UIImage+SBExt.m in Sources */,
 				6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */,
+				6D3C776925B027FA00C6E62D /* UIView+Shimmering.m in Sources */,
 				6DBB5F7424DA9C2800596489 /* AppDelegate.m in Sources */,
 				6DBB5F8524DA9C2B00596489 /* main.m in Sources */,
 				6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */,
 				6DB165AB25072FC900D1E2AB /* UITextField+PlaceholderColor.m in Sources */,
 				6DF494BA25905113009B57C3 /* SBTools+NSString.m in Sources */,
 				6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */,
+				6D8939BA25B5233500FFC97F /* SBTools+NetWork.m in Sources */,
 				6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */,
 				6DD9753E24ED1A960001BC45 /* TESTViewController.m in Sources */,
 				6DD9751224E696460001BC45 /* SBTools.m in Sources */,

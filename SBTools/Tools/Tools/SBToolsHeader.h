@@ -28,26 +28,37 @@
 //字符串处理
 #import "SBTools+NSString.h"
 
+//当前手机网络情况（Wi-Fi sim  3G 4G ...）
+#import "SBTools+NetWork.h"
 
 
-//控件初始化
+
+//控件快捷初始化
 #import "UIKitInit.h"
 
-//自定义控件
+//自定义按钮文字图片对齐方式
 #import "SBCustomerButton.h"
 
+//自定义TextView
 #import "SBCustomerTextView.h"
 
+//输入框PlaceholderColor
 #import "UITextField+PlaceholderColor.h"
 
+//输入框最大长度限制
 #import "UITextField+MaxLength.h"
 
+//view各种动画
 #import "UIView+Animation.h"
+
 //view圆角 
 #import "UIView+CornerRadius.h"
 
+//空列表数据展示
 #import "UITableView+SBDataEmpty.h"
 
+//label文字变色
+#import "UILabel+TimerColor.h"
 
 
 //宏设置

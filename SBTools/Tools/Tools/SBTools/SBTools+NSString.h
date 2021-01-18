@@ -42,7 +42,7 @@ BOOL sb_isEmpty(NSString *string);
 + (NSAttributedString*)sbHtmlStringToString:(NSString *)string;
 
 
-#pragma mark ----------一个字符串包含多少个汉字
+#pragma mark ----------计算字符串包含多少个汉字
 /// 判断一个字符串是否包含汉字
 /// @param string 字符串
 + (NSInteger )sbCountChineseContainInString:(NSString*)string;
