@@ -10,6 +10,7 @@
 		6D3C776925B027FA00C6E62D /* UIView+Shimmering.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */; };
 		6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */; };
 		6D8939BA25B5233500FFC97F /* SBTools+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8939B925B5233500FFC97F /* SBTools+NetWork.m */; };
+		6D8939C025B5391000FFC97F /* SBNumberScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8939BF25B5391000FFC97F /* SBNumberScroller.m */; };
 		6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */; };
 		6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165922507264600D1E2AB /* SBTools+Albums.m */; };
 		6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659925072FC900D1E2AB /* SBCustomerButton.m */; };
@@ -44,6 +45,8 @@
 		6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		6D8939B825B5233500FFC97F /* SBTools+NetWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+NetWork.h"; sourceTree = "<group>"; };
 		6D8939B925B5233500FFC97F /* SBTools+NetWork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+NetWork.m"; sourceTree = "<group>"; };
+		6D8939BE25B5391000FFC97F /* SBNumberScroller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBNumberScroller.h; sourceTree = "<group>"; };
+		6D8939BF25B5391000FFC97F /* SBNumberScroller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBNumberScroller.m; sourceTree = "<group>"; };
 		6DA5368625AED187008BF1A9 /* UILabel+TimerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TimerColor.h"; sourceTree = "<group>"; };
 		6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TimerColor.m"; sourceTree = "<group>"; };
 		6DAF9D7F24E68218001CFD34 /* SBTools_Macro_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_Color.h; sourceTree = "<group>"; };
@@ -113,8 +116,18 @@
 		6D83F4FB251DA16E000311CE /* SBToolLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				6D8939BD25B538E600FFC97F /* NumberScroller */,
 			);
 			path = SBToolLibrary;
+			sourceTree = "<group>";
+		};
+		6D8939BD25B538E600FFC97F /* NumberScroller */ = {
+			isa = PBXGroup;
+			children = (
+				6D8939BE25B5391000FFC97F /* SBNumberScroller.h */,
+				6D8939BF25B5391000FFC97F /* SBNumberScroller.m */,
+			);
+			path = NumberScroller;
 			sourceTree = "<group>";
 		};
 		6DA536A525AEF7A9008BF1A9 /* UILabel */ = {
@@ -384,6 +397,7 @@
 				6D8939BA25B5233500FFC97F /* SBTools+NetWork.m in Sources */,
 				6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */,
 				6DD9753E24ED1A960001BC45 /* TESTViewController.m in Sources */,
+				6D8939C025B5391000FFC97F /* SBNumberScroller.m in Sources */,
 				6DD9751224E696460001BC45 /* SBTools.m in Sources */,
 				6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */,
 				6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */,

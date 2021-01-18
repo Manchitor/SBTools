@@ -60,6 +60,10 @@
 //label文字变色
 #import "UILabel+TimerColor.h"
 
+//数字滚动视图
+#import "SBNumberScroller.h"
+
+
 
 //宏设置
 #import "SBTools_Macro_Color.h"
