@@ -31,6 +31,9 @@
 //当前手机网络情况（Wi-Fi sim  3G 4G ...）
 #import "SBTools+NetWork.h"
 
+//判断某些app是否安装
+#import "SBTools+App.h"
+
 
 
 //控件快捷初始化
@@ -63,6 +66,8 @@
 //数字滚动视图
 #import "SBNumberScroller.h"
 
+//Founcation 分类工具
+#import "Founcation+Category.h"
 
 
 //宏设置

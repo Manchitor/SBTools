@@ -1,17 +1,18 @@
 //
 //  SBTools+NetWork.m
 //  Tools
-//
+//  https://www.jianshu.com/p/247262b80f5f
 //  Created by 刘永吉 on 2021/1/18.
 //  Copyright © 2021 lyj. All rights reserved.
 //
 
 #import "SBTools+NetWork.h"
 #import "AppDelegate.h"
+
 @implementation SBTools (NetWork)
 
 #pragma mark ----------获取Wifi信息
-+ (id)SB_NetWorkGetWifiInfo{
++ (id)sb_NetWorkGetWifiInfo{
     NSArray *ifs = (__bridge_transfer id)CNCopySupportedInterfaces();
     id info = nil;
     for (NSString *ifnam in ifs) {
@@ -25,17 +26,17 @@
 }
 
 #pragma mark ----------获取WIFI名字
-+ (NSString *)SB_NetWorkGetWifiName{
-    return (NSString *)[self SB_NetWorkGetWifiInfo][@"SSID"];
++ (NSString *)sb_NetWorkGetWifiName{
+    return (NSString *)[self sb_NetWorkGetWifiInfo][@"SSID"];
 }
 
 #pragma mark ----------获取WIFI的MAC地址
-+ (NSString *)SB_NetWorkGetNetworkType{
-    return (NSString *)[self SB_NetWorkGetWifiInfo][@"BSSID"];
++ (NSString *)sb_NetWorkGetNetworkType{
+    return (NSString *)[self sb_NetWorkGetWifiInfo][@"BSSID"];
 }
 
 #pragma mark ----------获取网络连接类型
-+ (NSString *)SB_NetWorkGetWifiAddress{
++ (NSString *)sb_NetWorkGetWifiAddress{
     UIApplication *app = [UIApplication sharedApplication];
     id statusBar = nil;
 //    判断是否是iOS 13
@@ -195,11 +196,11 @@
 }
 
 #pragma mark ----------信号强度
-+ (int)SB_GetWifiSignalStrength{
++ (int)sb_GetWifiSignalStrength{
 
     int signalStrength = 0;
 //    判断类型是否为WIFI
-    if ([[self SB_NetWorkGetNetworkType] isEqualToString:@"WIFI"]) {
+    if ([[self sb_NetWorkGetNetworkType] isEqualToString:@"WIFI"]) {
 //        判断是否为iOS 13
         if (@available(iOS 13.0, *)) {
             UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;

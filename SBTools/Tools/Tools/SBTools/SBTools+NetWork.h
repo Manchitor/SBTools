@@ -16,17 +16,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 #pragma mark 获取Wifi信息
-+ (id)SB_NetWorkGetWifiInfo;
++ (id)sb_NetWorkGetWifiInfo;
 
 #pragma mark 获取WIFI名字
-+ (NSString *)SB_NetWorkGetWifiName;
++ (NSString *)sb_NetWorkGetWifiName;
 
 
 #pragma mark 获取WIFI的MAC地址
-+ (NSString *)SB_NetWorkGetWifiAddress;
++ (NSString *)sb_NetWorkGetWifiAddress;
 
 #pragma mark ----------获取网络连接类型
-+ (NSString *)SB_NetWorkGetNetworkType;
++ (NSString *)sb_NetWorkGetNetworkType;
 
 @end
 
