@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "UncaughtExceptionHandler.h"
 @interface AppDelegate ()
 
 @end
@@ -23,6 +24,8 @@
     self.window.rootViewController = [[ViewController alloc]init];
     [self.window makeKeyAndVisible];
     
+    [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];
+
     return YES;
 }
 

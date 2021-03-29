@@ -19,5 +19,11 @@
     [super viewDidLoad];
     
 }
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    NSString *str;
+    NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:0];
+    
+    [dic setObject:str forKey:@"ddd"];
+    NSLog(@"%@---%@",dic[@"ddd"],dic[@"dddddd"]);
+}
 @end

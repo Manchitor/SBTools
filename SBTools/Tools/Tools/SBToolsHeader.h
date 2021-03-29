@@ -69,6 +69,10 @@
 //Founcation 分类工具
 #import "Founcation+Category.h"
 
+//内边距UILabel
+#import "EdgeLabel.h"
+
+
 
 //宏设置
 #import "SBTools_Macro_Color.h"
