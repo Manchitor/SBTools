@@ -25,6 +25,16 @@ NS_ASSUME_NONNULL_BEGIN
 /**! 是否有安装支付宝 */
 +(BOOL)isInstallForAliPay;
 
+/**! 是否有安装高德地图 */
++(BOOL)isInstallForGaodeMap;
+
+/**! 是否有安装百度地图 */
++(BOOL)isInstallForBaiduMap;
+
+/**! 是否有安装腾讯地图 */
++(BOOL)isInstallForTencentMap;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

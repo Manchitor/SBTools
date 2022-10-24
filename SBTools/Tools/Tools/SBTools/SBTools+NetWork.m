@@ -1,7 +1,6 @@
 //
 //  SBTools+NetWork.m
 //  Tools
-//  https://www.jianshu.com/p/247262b80f5f
 //  Created by 刘永吉 on 2021/1/18.
 //  Copyright © 2021 lyj. All rights reserved.
 //

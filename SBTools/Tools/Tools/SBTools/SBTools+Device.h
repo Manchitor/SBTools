@@ -1,7 +1,7 @@
 //
 //  SBTools+Device.h
 //  Tools
-//
+//  https://www.theiphonewiki.com/wiki/Models
 //  Created by 刘永吉 on 2020/8/14.
 //  Copyright © 2020 lyj. All rights reserved.
 //

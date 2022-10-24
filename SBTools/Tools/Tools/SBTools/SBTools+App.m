@@ -57,4 +57,29 @@
    
    return YES;
 }
+
+/**! 是否有安装高德地图 */
++(BOOL)isInstallForGaodeMap{
+    if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"iosamap://"]]) {
+        return NO;
+    }
+    return YES;
+}
+
+/**! 是否有安装百度地图 */
++(BOOL)isInstallForBaiduMap{
+    if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"baidumap://"]]){
+        return NO;
+    }
+    return YES;
+}
+
+/**! 是否有安装腾讯地图 */
++(BOOL)isInstallForTencentMap{
+    if (![[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"qqmap://"]]){
+        return NO;
+    }
+    return YES;
+}
+
 @end
