@@ -59,6 +59,8 @@
 		6DB165AB25072FC900D1E2AB /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165A425072FC900D1E2AB /* UITextField+PlaceholderColor.m */; };
 		6DB165AE25072FEA00D1E2AB /* SBTools+UIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165AD25072FEA00D1E2AB /* SBTools+UIImage.m */; };
 		6DB165B225076B4800D1E2AB /* UIImage+SBExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165B125076B4800D1E2AB /* UIImage+SBExt.m */; };
+		6DBA992F29190B0C001203B2 /* SBAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA992E29190B0C001203B2 /* SBAssetExportSession.m */; };
+		6DBA99322919F32D001203B2 /* SBAssetExportCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBA99312919F32D001203B2 /* SBAssetExportCompression.m */; };
 		6DBB5F7424DA9C2800596489 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB5F7324DA9C2800596489 /* AppDelegate.m */; };
 		6DBB5F7A24DA9C2800596489 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB5F7924DA9C2800596489 /* ViewController.m */; };
 		6DBB5F7D24DA9C2800596489 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DBB5F7B24DA9C2800596489 /* Main.storyboard */; };
@@ -196,6 +198,10 @@
 		6DB165AD25072FEA00D1E2AB /* SBTools+UIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+UIImage.m"; sourceTree = "<group>"; };
 		6DB165B025076B4800D1E2AB /* UIImage+SBExt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+SBExt.h"; sourceTree = "<group>"; };
 		6DB165B125076B4800D1E2AB /* UIImage+SBExt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SBExt.m"; sourceTree = "<group>"; };
+		6DBA992D29190B0C001203B2 /* SBAssetExportSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAssetExportSession.h; sourceTree = "<group>"; };
+		6DBA992E29190B0C001203B2 /* SBAssetExportSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAssetExportSession.m; sourceTree = "<group>"; };
+		6DBA99302919F32D001203B2 /* SBAssetExportCompression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAssetExportCompression.h; sourceTree = "<group>"; };
+		6DBA99312919F32D001203B2 /* SBAssetExportCompression.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAssetExportCompression.m; sourceTree = "<group>"; };
 		6DBB5F6F24DA9C2800596489 /* Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DBB5F7224DA9C2800596489 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6DBB5F7324DA9C2800596489 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -286,25 +292,25 @@
 		6D8E2C4825BFBD07008F2240 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
-				6D8E2C9525C104C9008F2240 /* RITLContacts.h */,
-				6D8E2C9325C104C9008F2240 /* RITLContactObject.h */,
-				6D8E2C8725C104C8008F2240 /* RITLContactObject.m */,
-				6D8E2C8A25C104C9008F2240 /* RITLContactsManager.h */,
-				6D8E2C8525C104C8008F2240 /* RITLContactsManager.m */,
-				6D8E2C8425C104C8008F2240 /* RITLContactManager.h */,
-				6D8E2C9225C104C9008F2240 /* RITLContactManager.m */,
+				6D8E2C9025C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.h */,
+				6D8E2C8B25C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.m */,
+				6D8E2C8F25C104C9008F2240 /* CNMutableContact+RITLContactFile.h */,
+				6D8E2C8D25C104C9008F2240 /* CNMutableContact+RITLContactFile.m */,
 				6D8E2C8C25C104C9008F2240 /* NSString+RITLContactFile.h */,
 				6D8E2C8E25C104C9008F2240 /* NSString+RITLContactFile.m */,
 				6D8E2C9125C104C9008F2240 /* RITLContactCatcheManager.h */,
 				6D8E2C8625C104C8008F2240 /* RITLContactCatcheManager.m */,
-				6D8E2C9425C104C9008F2240 /* RITLContactObjectManager.h */,
-				6D8E2C8925C104C9008F2240 /* RITLContactObjectManager.m */,
-				6D8E2C8F25C104C9008F2240 /* CNMutableContact+RITLContactFile.h */,
-				6D8E2C8D25C104C9008F2240 /* CNMutableContact+RITLContactFile.m */,
+				6D8E2C8425C104C8008F2240 /* RITLContactManager.h */,
+				6D8E2C9225C104C9008F2240 /* RITLContactManager.m */,
+				6D8E2C9325C104C9008F2240 /* RITLContactObject.h */,
+				6D8E2C8725C104C8008F2240 /* RITLContactObject.m */,
 				6D8E2C8825C104C8008F2240 /* RITLContactObject+RITLContactFile.h */,
 				6D8E2C8325C104C8008F2240 /* RITLContactObject+RITLContactFile.m */,
-				6D8E2C9025C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.h */,
-				6D8E2C8B25C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.m */,
+				6D8E2C9425C104C9008F2240 /* RITLContactObjectManager.h */,
+				6D8E2C8925C104C9008F2240 /* RITLContactObjectManager.m */,
+				6D8E2C9525C104C9008F2240 /* RITLContacts.h */,
+				6D8E2C8A25C104C9008F2240 /* RITLContactsManager.h */,
+				6D8E2C8525C104C8008F2240 /* RITLContactsManager.m */,
 			);
 			path = AddressBook;
 			sourceTree = "<group>";
@@ -576,6 +582,17 @@
 			path = UIKitInit;
 			sourceTree = "<group>";
 		};
+		6DBA9929291908BC001203B2 /* SBAssetExportSession */ = {
+			isa = PBXGroup;
+			children = (
+				6DBA992D29190B0C001203B2 /* SBAssetExportSession.h */,
+				6DBA992E29190B0C001203B2 /* SBAssetExportSession.m */,
+				6DBA99302919F32D001203B2 /* SBAssetExportCompression.h */,
+				6DBA99312919F32D001203B2 /* SBAssetExportCompression.m */,
+			);
+			path = SBAssetExportSession;
+			sourceTree = "<group>";
+		};
 		6DBB5F6624DA9C2800596489 = {
 			isa = PBXGroup;
 			children = (
@@ -625,6 +642,7 @@
 				6DAF9D7E24E68218001CFD34 /* SBToolsMacro */,
 				6D83F4FB251DA16E000311CE /* SBToolLibrary */,
 				6DA6AD1025E4FF47000A1F2E /* SBCrashException */,
+				6DBA9929291908BC001203B2 /* SBAssetExportSession */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -755,9 +773,11 @@
 				6DA6ACE825E35E56000A1F2E /* NSDictionary+Ext.m in Sources */,
 				6DA6ACF225E35E57000A1F2E /* NSString+Base64.m in Sources */,
 				6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */,
+				6DBA992F29190B0C001203B2 /* SBAssetExportSession.m in Sources */,
 				6DD9753E24ED1A960001BC45 /* TESTViewController.m in Sources */,
 				6D8939C025B5391000FFC97F /* SBNumberScroller.m in Sources */,
 				6DA6ACED25E35E57000A1F2E /* NSData+Encrypt.m in Sources */,
+				6DBA99322919F32D001203B2 /* SBAssetExportCompression.m in Sources */,
 				6DD9751224E696460001BC45 /* SBTools.m in Sources */,
 				6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */,
 				6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */,

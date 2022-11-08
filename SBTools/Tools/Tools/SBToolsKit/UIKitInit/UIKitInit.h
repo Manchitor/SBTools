@@ -25,8 +25,9 @@ static inline  UITableView * _Nonnull TABLEVIEW_INIT(UITableViewStyle style, id 
     tableView.rowHeight = UITableViewAutomaticDimension;
     if (@available(iOS 11.0, *)) {
         tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    } else {
-        // Fallback on earlier versions
+    }
+    if (@available(iOS 15.0, *)) {\
+        tableView.sectionHeaderTopPadding = YES;\
     }
     return tableView;
 }
