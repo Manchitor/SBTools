@@ -14,6 +14,7 @@
 		6D1AE4CD2615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C52615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m */; };
 		6D1AE4CE2615C6FC0079B870 /* UBSignatureDrawingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C72615C6FC0079B870 /* UBSignatureDrawingModel.m */; };
 		6D3C776925B027FA00C6E62D /* UIView+Shimmering.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */; };
+		6D6A3AF429A495DB0000EA33 /* SBAssetExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6A3AF329A495DB0000EA33 /* SBAssetExportViewController.m */; };
 		6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */; };
 		6D8939BA25B5233500FFC97F /* SBTools+NetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8939B925B5233500FFC97F /* SBTools+NetWork.m */; };
 		6D8939C025B5391000FFC97F /* SBNumberScroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8939BF25B5391000FFC97F /* SBNumberScroller.m */; };
@@ -95,6 +96,8 @@
 		6D1AE4C92615C6FC0079B870 /* UBSignatureDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSignatureDrawingViewController.h; sourceTree = "<group>"; };
 		6D3C776725B027FA00C6E62D /* UIView+Shimmering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Shimmering.h"; sourceTree = "<group>"; };
 		6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shimmering.m"; sourceTree = "<group>"; };
+		6D6A3AF229A495DB0000EA33 /* SBAssetExportViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBAssetExportViewController.h; sourceTree = "<group>"; };
+		6D6A3AF329A495DB0000EA33 /* SBAssetExportViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBAssetExportViewController.m; sourceTree = "<group>"; };
 		6D83F4712519A1DF000311CE /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		6D85DF6B25CA43A400B2DF81 /* Tools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tools.entitlements; sourceTree = "<group>"; };
@@ -618,6 +621,8 @@
 				6DBB5F7324DA9C2800596489 /* AppDelegate.m */,
 				6DBB5F7824DA9C2800596489 /* ViewController.h */,
 				6DBB5F7924DA9C2800596489 /* ViewController.m */,
+				6D6A3AF229A495DB0000EA33 /* SBAssetExportViewController.h */,
+				6D6A3AF329A495DB0000EA33 /* SBAssetExportViewController.m */,
 				6D8E2C4925BFBE75008F2240 /* SBAddressBookViewController.h */,
 				6D8E2C4A25BFBE75008F2240 /* SBAddressBookViewController.m */,
 				6DD9753B24ED1A960001BC45 /* TESTViewController.h */,
@@ -757,6 +762,7 @@
 				6D8E2C9B25C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.m in Sources */,
 				6D8E2C9725C104C9008F2240 /* RITLContactsManager.m in Sources */,
 				6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */,
+				6D6A3AF429A495DB0000EA33 /* SBAssetExportViewController.m in Sources */,
 				6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */,
 				6D8E2C9C25C104C9008F2240 /* CNMutableContact+RITLContactFile.m in Sources */,
 				6DA6ACFB25E35E57000A1F2E /* NSDate+Ext.m in Sources */,
