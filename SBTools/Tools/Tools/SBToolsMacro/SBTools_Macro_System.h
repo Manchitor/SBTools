@@ -26,6 +26,10 @@
 //导航栏高度
 #define SB_NAV_HEIGHT            (SB_STATUS_BAR_HEIGHT + SB_NAV_BAR_HEIGHT)
 
+// 弱引用
+#define SB_WEAKSEKF                 __weak typeof(self) weakSelf = self;
+
+
 /**
  *  手机系统的版本
  */

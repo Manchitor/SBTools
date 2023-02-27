@@ -93,7 +93,7 @@
 
 /// 判读是否为空或输入只有空格
 /// @param string 字符串
-BOOL sb_isEmpty(NSString *string){
+BOOL sb_isEmptyString(NSString *string){
     if (!string || [string isEqual:[NSNull null]]){
         return YES;
     }else{
@@ -106,5 +106,32 @@ BOOL sb_isEmpty(NSString *string){
             return NO;
         }
     }
+}
+
+///判读对象是否为空
+BOOL sb_isEmptyObject(id data){
+    BOOL result = NO;
+    if (data != nil) {
+        if ([data isKindOfClass:[NSObject class]]) {
+            if ([data isKindOfClass:[NSString class]]) {
+                if ([(NSString *)data isEqualToString:@""] || data == nil) {
+                    result = YES;
+                }
+            }
+            else if ([data isKindOfClass:[NSArray class]]){
+                if (((NSArray *)data).count == 0 || data == nil) {
+                    result = YES;
+                }
+            }
+            else if(data == nil)
+            {
+                result = YES;
+            }
+        }
+    }else{
+        result = YES;
+    }
+    
+    return result;
 }
 @end

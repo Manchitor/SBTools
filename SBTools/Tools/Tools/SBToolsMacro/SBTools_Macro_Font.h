@@ -23,7 +23,7 @@
 /**
    苹果系统加粗字体
  */
-#define SBFONTMEDIUM(size)         [UIFont fontWithName:@"PingFangSC-Medium" size:size]
+#define SBFONTMEDIUM(fontSize)      [UIFont fontWithName:@"PingFangSC-Medium" size:fontSize]
 
 
 /**

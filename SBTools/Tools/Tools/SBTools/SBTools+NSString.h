@@ -15,7 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark ----------判读是否为空或输入只有空格
 /// 判读是否为空或输入只有空格
 /// @param string 字符串
-BOOL sb_isEmpty(NSString *string);
+BOOL sb_isEmptyString(NSString *string);
+
+/// 判读对象是否为空
+BOOL sb_isEmptyObject(id data);
 
 
 #pragma mark ----------汉字转拼音

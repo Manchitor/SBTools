@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "SBToolsHeader.h"
 
+#import "ERCalendarPickerViewController.h"//日历
+
 @interface ViewController ()
 
 @end
@@ -17,7 +19,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-     
+    
 }
 
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    ERCalendarPickerViewController *vc = [[ERCalendarPickerViewController alloc] initWithNibName:NSStringFromClass([ERCalendarPickerViewController class]) bundle:[NSBundle mainBundle]];
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:vc animated:YES completion:nil];
+}
 @end

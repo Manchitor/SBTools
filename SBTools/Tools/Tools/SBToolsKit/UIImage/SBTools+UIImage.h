@@ -18,6 +18,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(UIImage *)SB_fixOrientationWithImage:(UIImage *)image;
 
+
+/**
+    根据图片获取图片的主色调
+ */
++ (void )SB_getImageThemeColor:(UIImage *)img finish:(void(^)(UIColor *color))callBack;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -69,6 +69,12 @@
 //Founcation 分类工具
 #import "Founcation+Category.h"
 
+//Image工具
+#import "SBTools+UIImage.h"
+
+//Image工具
+#import "UIImage+SBExt.h"
+
 //内边距UILabel
 #import "EdgeLabel.h"
 
