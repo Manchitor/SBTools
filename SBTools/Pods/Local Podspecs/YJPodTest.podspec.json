@@ -1,0 +1,22 @@
+{
+  "name": "YJPodTest",
+  "version": "0.1.0",
+  "summary": "A short description of YJPodTest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Manchitor/YJPodTest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Manchitor": "18721218206@163.com"
+  },
+  "source": {
+    "git": "https://github.com/Manchitor/YJPodTest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "YJPodTest/Classes/**/*"
+}

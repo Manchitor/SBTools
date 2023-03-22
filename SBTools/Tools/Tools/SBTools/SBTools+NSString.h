@@ -12,52 +12,51 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SBTools (NSString)
 
-#pragma mark ----------判读是否为空或输入只有空格
 /// 判读是否为空或输入只有空格
 /// @param string 字符串
-BOOL sb_isEmptyString(NSString *string);
-
-/// 判读对象是否为空
-BOOL sb_isEmptyObject(id data);
+BOOL sb_string_empty(NSString *string);
 
 
-#pragma mark ----------汉字转拼音
 /// 汉字转拼音
 /// @param chinese 汉字
-+ (NSString *)sbTtransformChineseToPinyin:(NSString *)chinese;
++ (NSString *)sb_string_transform_pinyin:(NSString *)chinese;
 
 
-#pragma mark ----------字符串去掉换行空格
 /// 汉字去掉换行空格
 /// @param string 字符串
-+(NSString *)sbTransformSpaceReplacing:(NSString *)string;
++(NSString *)sb_string_trim:(NSString *)string;
 
 
-#pragma mark ----------手机号格式化处理344
-/// 手机号格式化处理344
+/// 手机号格式化处理344 例：187 2121 8206
 /// @param intputPhone 手机号
-+ (NSString *)sbFormatPhone:(NSString *)intputPhone;
++ (NSString *)sb_string_format_phone:(NSString *)intputPhone;
 
 
-#pragma mark ----------html向字符串转化
-/// html向字符串转化
-/// @param string html字符串
-+ (NSAttributedString*)sbHtmlStringToString:(NSString *)string;
-
-
-#pragma mark ----------计算字符串包含多少个汉字
-/// 判断一个字符串是否包含汉字
+/// 判断一个字符串包含汉字个数
 /// @param string 字符串
-+ (NSInteger )sbCountChineseContainInString:(NSString*)string;
++ (NSInteger )sb_string_chinese_count:(NSString*)string;
 
 
-#pragma mark ----------获取字符串高度 宽度
 /// 获取字符串高度 宽度
 /// @param font 字体
 /// @param text 内容
 /// @param maxWidth 最大宽度
-+ (CGSize)sbSizeWithFont:(UIFont *)font text:(NSString *)text maxWidth:(CGFloat)maxWidth;
++ (CGSize)sb_string_max_size:(UIFont *)font text:(NSString *)text maxWidth:(CGFloat)maxWidth;
 
+
+/// 手机号脱敏
+/// @param phone 手机号
++ (NSString*) sb_string_secrect_phone:(NSString*)phone;
+
+
+/// 邮箱脱敏
+/// @param email 邮箱
++ (NSString*) sb_string_secrect_email:(NSString*)email;
+
+
+/// 缓存单位转换
+/// @param size @(1024)
++ (NSString *)sb_string_size_unit_formatted:(NSNumber *)size;
 @end
 
 NS_ASSUME_NONNULL_END

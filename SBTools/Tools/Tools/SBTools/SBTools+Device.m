@@ -14,18 +14,19 @@
 #include <net/if.h>
 #include <net/if_dl.h>
 @implementation SBTools (Device)
-///获取手机 platform
-+ (NSString *)curryPlatform{
+/// 设备识别码 例如:"iPhone3,2"
++ (NSString *)sb_device_platform{
     struct utsname systemInfo;
     
     uname(&systemInfo);
     
     return [NSString stringWithCString:systemInfo.machine encoding:NSASCIIStringEncoding];
 }
-///获取手机型号
-+ (NSString *)curryDeviceType{
-    
-    NSString *platform = [self curryPlatform];
+
+/// 获取设备型号：iPhone 5、iPhone 5s、iPhone 6...
++ (NSString *)sb_device_model_name{
+    //官方wiki文档：https://www.theiphonewiki.com/wiki/Models
+    NSString *platform = [SBTools sb_device_platform];
     
     //------------------------------iPhone---------------------------
     if ([platform isEqualToString:@"iPhone1,1"]) return @"iPhone 2G";
@@ -238,111 +239,56 @@
     
     return @"Unknown";
 }
-+ (BOOL)isiPad{
-    return [[[self curryPlatform] substringToIndex:4] isEqualToString:@"iPad"];
+
+///判断设备是否为Retina显示屏
++ (BOOL)sb_device_retina{
+    return [[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0 || [UIScreen mainScreen].scale == 3.0);
 }
 
-+ (BOOL)isiPhone{
-    return [[[self curryPlatform] substringToIndex:6] isEqualToString:@"iPhone"];
+///判断设备是否为RetinaHD高清显示屏
++ (BOOL)sb_device_hd_retina{
+    return [[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 3.0);
 }
 
-+ (BOOL)isiPod{
-    return [[[self curryPlatform] substringToIndex:4] isEqualToString:@"iPod"];
-}
 
-+ (BOOL)isSimulator{
-    return [[self curryPlatform] isEqualToString:@"i386"] || [[self curryPlatform] isEqualToString:@"x86_64"];
-}
-/**
- 判断设备是否为Retina屏
-
- @return YES即为Retina屏
- */
-+ (BOOL)isRetina{
-    return [[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)]
-       && ([UIScreen mainScreen].scale == 2.0 || [UIScreen mainScreen].scale == 3.0);
-}
-
-/**
- 判断设备是否为Retina HD屏
- 
- @return YES即为Retina HD屏
- */
-+ (BOOL)isRetinaHD{
-    return [[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)]
-    && ([UIScreen mainScreen].scale == 3.0);
-}
-
-/**
- 当前设备是否有摄像头
-
- @return YES即为有摄像头
- */
-+ (BOOL)isHasCamera{
+/// 当前设备是否有摄像头
++ (BOOL)sb_device_camera{
     return [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera];
 }
-/**
- 获取当前设备名称
 
- @return 当前设备名称
- */
-+ (NSString *)curryDeviceName{
+/// 获取当前设备名称
++ (NSString *)sb_device_Name{
     return [[UIDevice currentDevice] name];
 }
 
-/**
- 获取设备iOS版本号
-
- @return 版本号字符串
- */
-+ (NSString *)curryiOSVersion{
+/// 获取设备iOS版本号
++ (NSString *)sb_device_version{
     return [[UIDevice currentDevice] systemVersion];
+}
+
+/// 获取当前设备cpu主频
++ (NSUInteger)sb_device_cpu_frequency{
+    return  [SBTools sb_device_system_info:HW_CPU_FREQ];
+}
+
+/// 获取当前设备总线带宽
++ (NSUInteger)sb_device_bus_frequency{
+    return  [SBTools sb_device_system_info:HW_BUS_FREQ];
 
 }
 
-/**
- 获取当前设备cpu主频
-
- @return 当前设备cpu主频
- */
-+ (NSUInteger)curryCPUFrequency{
-    return  [self currySystemInfo:HW_CPU_FREQ];
+/// 获取当前设备物理内存大小
++ (NSUInteger)sb_device_ram_size{
+    return [SBTools sb_device_system_info:HW_MEMSIZE];
 }
 
-/**
- 获取当前设备总线带宽
-
- @return 当前设备总线带宽
- */
-+ (NSUInteger)curryBusFrequency{
-    return  [self currySystemInfo:HW_BUS_FREQ];
-
+/// 获取当前设备cpu核数
++ (NSUInteger)sb_device_cpu_num{
+    return [SBTools sb_device_system_info:HW_NCPU];
 }
 
-/**
- 获取当前设备物理内存大小
-
- @return 当前设备物理内存大小
- */
-+ (NSUInteger)curryRamSize{
-    return [self currySystemInfo:HW_MEMSIZE];
-}
-
-/**
- 获取当前设备cpu核数
-
- @return 当前设备cpu核数
- */
-+ (NSUInteger)curryCPUNumber{
-    return [self currySystemInfo:HW_NCPU];
-}
-
-/**
- 获取当前设备mac地址
- 
- @return 当前设备mac地址
- */
-+ (NSString *)curryMacAddress{
+/// 获取当前设备mac地址
++ (NSString *)sb_device_mac_address{
     int                 mib[6];
     size_t              len;
     char                *buf;
@@ -386,48 +332,31 @@
     return outstring;
 }
 
-/**
- 获取当前设备总内存
-
- @return 当前设备总内存
- */
-+ (NSUInteger)curryTotalMemoryBytes{
-    return [self currySystemInfo:HW_PHYSMEM];
-
+/// 获取当前设备总内存
++ (NSUInteger)sb_device_total_memory{
+    return [SBTools sb_device_system_info:HW_PHYSMEM];
 }
 
-/**
- 获取当前设备内核内存
-
- @return 当前设备内核内存
- */
-+ (NSUInteger)curryUserMemoryBytes{
-    return [self currySystemInfo:HW_USERMEM];
+/// 获取当前设备内核内存
++ (NSUInteger)sb_device_user_memory{
+    return [SBTools sb_device_system_info:HW_USERMEM];
 }
 
-/**
- 获取当前设备总闪存大小
-
- @return 当前设备总闪存大小
- */
-+ (NSNumber *)curryTotalDiskSpaceBytes{
+/// 获取当前设备总闪存大小
++ (NSNumber *)sb_device_total_disk_space{
     NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
     return [fattributes objectForKey:NSFileSystemSize];
 }
 
-/**
-  获取当前设备空闲闪存大小
-
- @return 当前设备空闲闪存大小
- */
-+ (NSNumber *)curryFreeDiskSpaceBytes{
+// 获取当前设备空闲闪存大小
++ (NSNumber *)sb_device_total_free_disk_space{
     NSDictionary *fattributes = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:nil];
     return [fattributes objectForKey:NSFileSystemFreeSize];
 }
 
 
 #pragma mark - Private
-+ (NSUInteger)currySystemInfo:(uint)typeSpecifier {
++ (NSUInteger)sb_device_system_info:(uint)typeSpecifier {
     size_t size = sizeof(int);
     int results;
     int mib[2] = {CTL_HW, typeSpecifier};

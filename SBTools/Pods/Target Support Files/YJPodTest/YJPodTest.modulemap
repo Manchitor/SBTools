@@ -1,0 +1,6 @@
+framework module YJPodTest {
+  umbrella header "YJPodTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

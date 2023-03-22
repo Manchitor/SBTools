@@ -9,42 +9,39 @@
 #import "SBTools+HTML.h"
 
 @implementation SBTools (HTML)
-+ (NSString *)SB_filterHTML:(NSString *)html
-{
-    if (html == nil)
-    {
+/**
+ 过滤掉HTML标签
+ 
+ @param html HTML内容
+ @return 返回去掉所有HTML标签后的字符串
+ */
++ (NSString *)sb_html_filter:(NSString *)html{
+    if (html == nil){
         return nil;
     }
     NSScanner *scanner = [NSScanner scannerWithString:html];
     NSString *text = nil;
     
-    while ([scanner isAtEnd] == NO)
-    {
+    while ([scanner isAtEnd] == NO){
         // 找到标签的起始位置
         [scanner scanUpToString:@"<" intoString:nil];
         // 找到标签的结束位置
         [scanner scanUpToString:@">" intoString:&text];
         // 替换字符
-        html = [html stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@>",text]
-                                               withString:@""];
+        html = [html stringByReplacingOccurrencesOfString:[NSString stringWithFormat:@"%@>",text] withString:@""];
     }
     
     return html;
 }
 
 /** 去掉html格式 */
-+ (NSString *)SB_removeHtmlFormat;
-{
-    NSString *str = [NSString stringWithFormat:@"%@", self];
++ (NSString *)sb_html_remove_format:(NSString *)str{
     
     NSError *error;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"<[^>]*>" options:NSRegularExpressionCaseInsensitive error:&error];
-    if (!error)
-    {
+    if (!error){
         str = [regex stringByReplacingMatchesInString:str options:0 range:NSMakeRange(0, str.length) withTemplate:@"$2$1"];
-    }
-    else
-    {
+    }else{
         NSLog(@"%@", error);
     }
     
@@ -170,11 +167,17 @@
                       ];
     
     NSInteger idx = 0;
-    for (NSString *obj in code)
-    {
+    for (NSString *obj in code){
         str = [str stringByReplacingOccurrencesOfString:(NSString *)obj withString:html_code[idx]];
         idx++;
     }
     return str;
+}
+
+/// html向字符串转化 返回属性字符串：包括颜色 字体等
+/// @param string html字符串
++ (NSAttributedString*)sb_html_attributed_string:(NSString *)string;{
+    NSAttributedString * attrStr = [[NSAttributedString alloc] initWithData:[string dataUsingEncoding:NSUnicodeStringEncoding] options:@{ NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType } documentAttributes:nil error:nil];
+    return attrStr;
 }
 @end

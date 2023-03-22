@@ -14,146 +14,54 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SBTools (Device)
 
-/**
- 设备识别码
- 
- 例如:"iPhone3,2"
+/// 设备识别码 例如:"iPhone3,2"
++ (NSString *)sb_device_platform;
 
- @return 设备平台类型
-*/
-+ (NSString *)curryPlatform;
-/**
- 根据系统平台类型获取设备名
+/// 获取设备型号：iPhone 5、iPhone 5s、iPhone 6...
+/// 官方wiki文档：https://www.theiphonewiki.com/wiki/Models
++ (NSString *)sb_device_model_name;
 
- 例如:"iPhone 4"
+/// 判断设备是否为Retina显示屏
++ (BOOL)sb_device_retina;
 
- @return 设备名字符串
-*/
-+ (NSString *)curryDeviceType;
+/// 判断设备是否为RetinaHD高清显示屏
++ (BOOL)sb_device_hd_retina;
 
-/**
- 判断设备是否为iPad
- @return YES即为iPad
-*/
-+ (BOOL)isiPad;
+/// 当前设备是否有摄像头
++ (BOOL)sb_device_camera;
 
-/**
- 判断设备是否为iPhone
+/// 获取当前设备名称
++ (NSString *)sb_device_Name;
 
- @return YES即为iPhone
-*/
-+ (BOOL)isiPhone;
+/// 获取设备iOS版本号
++ (NSString *)sb_device_version;
 
-/**
- 判断设备是否为iPod
+/// 获取当前设备cpu主频
++ (NSUInteger)sb_device_cpu_frequency;
 
- @return YES即为iPod
-*/
-+ (BOOL)isiPod;
+/// 获取当前设备总线带宽
++ (NSUInteger)sb_device_bus_frequency;
 
-/**
- 判断设备是否为模拟器
+/// 获取当前设备物理内存大小
++ (NSUInteger)sb_device_ram_size;
 
- @return YES即为模拟器
-*/
-+ (BOOL)isSimulator;
-/**
- 判断设备是否为Retina屏
+/// 获取当前设备cpu核数
++ (NSUInteger)sb_device_cpu_num;
 
- @return YES即为Retina屏
- */
-+ (BOOL)isRetina;
+/// 获取当前设备mac地址
++ (NSString *)sb_device_mac_address;
 
-/**
- 判断设备是否为Retina HD屏
- 
- @return YES即为Retina HD屏
- */
-+ (BOOL)isRetinaHD;
+/// 获取当前设备总内存
++ (NSUInteger)sb_device_total_memory;
 
-/**
- 当前设备是否有摄像头
+/// 获取当前设备内核内存
++ (NSUInteger)sb_device_user_memory;
 
- @return YES即为有摄像头
- */
-+ (BOOL)isHasCamera;
+/// 获取当前设备总闪存大小
++ (NSNumber *)sb_device_total_disk_space;
 
-/**
- 获取当前设备名称
-
- @return 当前设备名称
- */
-+ (NSString *)curryDeviceName;
-
-/**
- 获取设备iOS版本号
-
- @return 版本号字符串
- */
-+ (NSString *)curryiOSVersion;
-
-/**
- 获取当前设备cpu主频
-
- @return 当前设备cpu主频
- */
-+ (NSUInteger)curryCPUFrequency;
-
-/**
- 获取当前设备总线带宽
-
- @return 当前设备总线带宽
- */
-+ (NSUInteger)curryBusFrequency;
-
-/**
- 获取当前设备物理内存大小
-
- @return 当前设备物理内存大小
- */
-+ (NSUInteger)curryRamSize;
-
-/**
- 获取当前设备cpu核数
-
- @return 当前设备cpu核数
- */
-+ (NSUInteger)curryCPUNumber;
-
-/**
- 获取当前设备mac地址
- 
- @return 当前设备mac地址
- */
-+ (NSString *)curryMacAddress;
-
-/**
- 获取当前设备总内存
-
- @return 当前设备总内存
- */
-+ (NSUInteger)curryTotalMemoryBytes;
-
-/**
- 获取当前设备内核内存
-
- @return 当前设备内核内存
- */
-+ (NSUInteger)curryUserMemoryBytes;
-
-/**
- 获取当前设备总闪存大小
-
- @return 当前设备总闪存大小
- */
-+ (NSNumber *)curryTotalDiskSpaceBytes;
-
-/**
-  获取当前设备空闲闪存大小
-
- @return 当前设备空闲闪存大小
- */
-+ (NSNumber *)curryFreeDiskSpaceBytes;
+// 获取当前设备空闲闪存大小
++ (NSNumber *)sb_device_total_free_disk_space;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -14,26 +14,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 //MARK: - 相关App是否有安装检测
 /**! 是否有安装QQ */
-+(BOOL)isInstallForQQ;
++(BOOL)sb_install_QQ;
 
 /**! 是否有安装微信 */
-+(BOOL)isInstallForWechat;
++(BOOL)sb_install_Wechat;
 
 /**! 是否有安装新浪微博 */
-+(BOOL)isInstallForSina;
++(BOOL)sb_install_Sina;
 
 /**! 是否有安装支付宝 */
-+(BOOL)isInstallForAliPay;
++(BOOL)sb_install_AliPay;
 
 /**! 是否有安装高德地图 */
-+(BOOL)isInstallForGaodeMap;
++(BOOL)sb_install_GaodeMap;
 
 /**! 是否有安装百度地图 */
-+(BOOL)isInstallForBaiduMap;
++(BOOL)sb_install_BaiduMap;
 
 /**! 是否有安装腾讯地图 */
-+(BOOL)isInstallForTencentMap;
-
++(BOOL)sb_install_TencentMap;
 
 @end
 

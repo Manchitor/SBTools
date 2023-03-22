@@ -1,16 +1,28 @@
 PODS:
   - Masonry (1.1.0)
+  - YJPodTest (0.1.0)
 
 DEPENDENCIES:
   - Masonry
+  - YJPodTest (from `https://github.com/Manchitor/YJPodTest.git`)
 
 SPEC REPOS:
   https://cdn.cocoapods.org/:
     - Masonry
 
+EXTERNAL SOURCES:
+  YJPodTest:
+    :git: https://github.com/Manchitor/YJPodTest.git
+
+CHECKOUT OPTIONS:
+  YJPodTest:
+    :commit: f615f82bd733a65f92b99b04a1389941822bec57
+    :git: https://github.com/Manchitor/YJPodTest.git
+
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  YJPodTest: 67f432812fabb7f1cb1690bfa6d87b129b352f7c
 
-PODFILE CHECKSUM: eb9cd1eb2ad4a57a81b4dd0c3d7a225517f79f86
+PODFILE CHECKSUM: 326162fa98a5fc45606f0b1ae8609a3456c0a026
 
 COCOAPODS: 1.11.3

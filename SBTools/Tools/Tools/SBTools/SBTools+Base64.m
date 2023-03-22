@@ -10,36 +10,39 @@
 
 @implementation SBTools (Base64)
 
-+ (NSString*)SB_encodeBase64String:(NSString* )input {
-
+/// base64加密 （RFC 4648规范）
+/// @param input 需要加密的字符串
++ (NSString*)sb_base64_encode_string:(NSString*)input{
     NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding];
-
-    return [SBTools SB_encodeBase64Data:data];
-
+    return [SBTools sb_base64_encode_data:data];
 }
 
-+ (NSString*)SB_decodeBase64String:(NSString* )input {
-
-    NSData *data = [[NSData alloc]initWithBase64EncodedString:input options:NSDataBase64DecodingIgnoreUnknownCharacters];
+/// base64解密 （RFC 4648规范）
+/// @param input 需要解密的字符串
++ (NSString*)sb_base64_decode_string:(NSString*)input{
+    
+    NSData *data = [[NSData alloc] initWithBase64EncodedString:input options:NSDataBase64DecodingIgnoreUnknownCharacters];
 
     return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
 }
 
-+ (NSString*)SB_encodeBase64Data:(NSData*)input {
+/// base64加密 （RFC 4648规范）
+/// @param data 需要加密的进制数据
++ (NSString*)sb_base64_encode_data:(NSData*)data{
     
-  NSString *result = [input base64EncodedStringWithOptions:0];
-    
-    return result;
-
+    NSString *result = [data base64EncodedStringWithOptions:0];
+      
+      return result;
 }
 
-+ (NSString*)SB_decodeBase64Data:(NSData*)input {
+/// base64解密 （RFC 4648规范）
+/// @param data 需要加密的进制数据
++ (NSString*)sb_base64_decode_data:(NSData*)data{
+    
+    NSData *result = [[NSData alloc]initWithBase64EncodedData:data options:NSDataBase64DecodingIgnoreUnknownCharacters];
 
-    NSData *data = [[NSData alloc]initWithBase64EncodedData:input options:NSDataBase64DecodingIgnoreUnknownCharacters];
-
-    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+    return [[NSString alloc]initWithData:result encoding:NSUTF8StringEncoding];
 
 }
-
 
 @end

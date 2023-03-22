@@ -28,13 +28,11 @@
 //字符串处理
 #import "SBTools+NSString.h"
 
-//当前手机网络情况（Wi-Fi sim  3G 4G ...）
-#import "SBTools+NetWork.h"
-
 //判断某些app是否安装
 #import "SBTools+App.h"
 
-
+//坐标系转换打开手机地图跳转到目的地页面
+#import "SBTools+Map.h"
 
 //控件快捷初始化
 #import "UIKitInit.h"
