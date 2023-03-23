@@ -15,14 +15,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param timerDuration 动画时间
 /// @param timerColor 变换后的颜色
 /// @param isReSetColor 动画执行完毕后是否颜色复位
--(void)startTimerAnimationTimerDuration:(CGFloat) timerDuration TimerColor:(UIColor *) timerColor isReSetColor:(BOOL) isReSetColor;
+-(void)sb_start_word_discoloration_animation:(CGFloat) timerDuration TimerColor:(UIColor *) timerColor isReSetColor:(BOOL) isReSetColor;
 
 ///结束变色动画
--(void)stopTimerAnimation;
+-(void)sb_end_word_discoloration_animation;
+
+
 
 
 ///开始闪动动画 类似iphone 滑动解锁 滑块
--(void)startFlashingAnimation;
+-(void)sb_start_slider_animation;
+
+///结束闪动动画 类似iphone 滑动解锁 滑块
+-(void)sb_end_slider_animation;
 @end
 
 NS_ASSUME_NONNULL_END

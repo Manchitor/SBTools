@@ -54,7 +54,7 @@ static NSString *isReSetColorKey = @"SB_UILabel_IsReSetColor";
 }
 
 ///开启变色动画
--(void)startTimerAnimationTimerDuration:(CGFloat)timerDuration TimerColor:(UIColor *)timerColor isReSetColor:(BOOL)isReSetColor{
+-(void)sb_start_word_discoloration_animation:(CGFloat)timerDuration TimerColor:(UIColor *)timerColor isReSetColor:(BOOL)isReSetColor{
     
     if (!self.text.length) {
         return;
@@ -63,13 +63,13 @@ static NSString *isReSetColorKey = @"SB_UILabel_IsReSetColor";
     self.index = 0;
     
     self.isReSetColor = isReSetColor;
-
+    
     NSInteger  lenth = self.text.length;
     
     float singleDuration = timerDuration/(float)lenth;
     
     NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:self.text];
-
+    
     //(1)
     dispatch_queue_t quene = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     //(2)
@@ -82,9 +82,9 @@ static NSString *isReSetColorKey = @"SB_UILabel_IsReSetColor";
             
             //在这里执行事件
             self.index++;
-
+            
             if (self.index>lenth) {
-                [self stopTimerAnimation];
+                [self sb_end_word_discoloration_animation];
                 return;
             }
             
@@ -98,21 +98,28 @@ static NSString *isReSetColorKey = @"SB_UILabel_IsReSetColor";
 }
 
 ///结束逐字变色动画
--(void)stopTimerAnimation{
+-(void)sb_end_word_discoloration_animation{
     self.index = 0;
     
     if (self.isReSetColor) {
         NSMutableAttributedString *str = [[NSMutableAttributedString alloc]initWithString:self.text];
-
+        
         [str setAttributes:@{NSForegroundColorAttributeName:self.textColor} range:NSMakeRange(0, self.index)];
         
         [self setAttributedText:str];
     }
-
-    dispatch_cancel(self.timer);
+    if (self.timer) {
+        dispatch_cancel(self.timer);
+    }
 }
 
--(void)startFlashingAnimation{
+
+
+
+
+
+///开始闪动动画 类似iphone 滑动解锁 滑块
+-(void)sb_start_slider_animation{
     self.backgroundColor = [UIColor clearColor];
     CAGradientLayer *gradientMask = [CAGradientLayer layer];
     gradientMask.frame = self.bounds;
@@ -135,5 +142,10 @@ static NSString *isReSetColorKey = @"SB_UILabel_IsReSetColor";
     animation.duration  = 0.007*[UIScreen mainScreen].bounds.size.width/2.8;
     
     [gradientMask addAnimation:animation forKey:nil];
+}
+
+///结束闪动动画 类似iphone 滑动解锁 滑块
+-(void)sb_end_slider_animation{
+    [self.layer.mask removeAllAnimations];
 }
 @end

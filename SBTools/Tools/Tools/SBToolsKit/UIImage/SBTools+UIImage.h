@@ -14,15 +14,15 @@ NS_ASSUME_NONNULL_BEGIN
 /**
     修改图片正方向
  */
-+(UIImage *)SB_fixOrientationWithImageData:(NSData *)imageData;
++(UIImage *)sb_fix_orientation_data:(NSData *)imageData;
 
-+(UIImage *)SB_fixOrientationWithImage:(UIImage *)image;
++(UIImage *)sb_fix_orientation_image:(UIImage *)image;
 
 
 /**
     根据图片获取图片的主色调
  */
-+ (void )SB_getImageThemeColor:(UIImage *)img finish:(void(^)(UIColor *color))callBack;
++ (void )sb_theme_color:(UIImage *)img finish:(void(^)(UIColor *color))callBack;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		44595056ABAE5BDE7F0B1180 /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3768288522E5EC7E1DB3696B /* Pods_Tools.framework */; };
-		6D1AE4332611B5570079B870 /* EdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4312611B5570079B870 /* EdgeLabel.m */; };
 		6D1AE4CA2615C6FC0079B870 /* UBSignatureDrawingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4BE2615C6FC0079B870 /* UBSignatureDrawingViewController.m */; };
 		6D1AE4CB2615C6FC0079B870 /* UBSignatureBezierProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C22615C6FC0079B870 /* UBSignatureBezierProvider.m */; };
 		6D1AE4CC2615C6FC0079B870 /* UBSignatureDrawingModelAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C42615C6FC0079B870 /* UBSignatureDrawingModelAsync.m */; };
 		6D1AE4CD2615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C52615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m */; };
 		6D1AE4CE2615C6FC0079B870 /* UBSignatureDrawingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C72615C6FC0079B870 /* UBSignatureDrawingModel.m */; };
-		6D3C776925B027FA00C6E62D /* UIView+Shimmering.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */; };
 		6D70F57029AC7AA8003AF34A /* SBAssetExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70F56E29AC7AA8003AF34A /* SBAssetExportViewController.m */; };
 		6D70F57329AC7AB2003AF34A /* SBAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70F57229AC7AB2003AF34A /* SBAddressBookViewController.m */; };
 		6D70F58529AC7C6C003AF34A /* ERCalendarPickerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D70F57729AC7C6B003AF34A /* ERCalendarPickerItemCell.xib */; };
@@ -62,7 +60,6 @@
 		6DA6AD1325E4FF47000A1F2E /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6AD1225E4FF47000A1F2E /* UncaughtExceptionHandler.m */; };
 		6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165922507264600D1E2AB /* SBTools+Albums.m */; };
 		6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659925072FC900D1E2AB /* SBCustomerButton.m */; };
-		6DB165A825072FC900D1E2AB /* UIView+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659B25072FC900D1E2AB /* UIView+Animation.m */; };
 		6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659E25072FC900D1E2AB /* SBCustomerTextView.m */; };
 		6DB165AA25072FC900D1E2AB /* UITextField+MaxLength.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165A125072FC900D1E2AB /* UITextField+MaxLength.m */; };
 		6DB165AB25072FC900D1E2AB /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165A425072FC900D1E2AB /* UITextField+PlaceholderColor.m */; };
@@ -79,6 +76,8 @@
 		6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */; };
 		6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */; };
 		6DD3B6C429CAF922009DF3C7 /* SBTools+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6C329CAF922009DF3C7 /* SBTools+Map.m */; };
+		6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6C929CC28B0009DF3C7 /* SBEdgeLabel.m */; };
+		6DD3B6CD29CC4659009DF3C7 /* UITextField+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6CB29CC4659009DF3C7 /* UITextField+Clear.m */; };
 		6DD9751224E696460001BC45 /* SBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751124E696460001BC45 /* SBTools.m */; };
 		6DD9751924E6987D0001BC45 /* SBTools+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751724E6987D0001BC45 /* SBTools+MD5.m */; };
 		6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751B24E6990C0001BC45 /* SBTools+Device.m */; };
@@ -92,8 +91,6 @@
 /* Begin PBXFileReference section */
 		3768288522E5EC7E1DB3696B /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D7A4980C0CB7E434BE2934 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
-		6D1AE4312611B5570079B870 /* EdgeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EdgeLabel.m; sourceTree = "<group>"; };
-		6D1AE4322611B5570079B870 /* EdgeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EdgeLabel.h; sourceTree = "<group>"; };
 		6D1AE4BE2615C6FC0079B870 /* UBSignatureDrawingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBSignatureDrawingViewController.m; sourceTree = "<group>"; };
 		6D1AE4C02615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+UBWeightedPoint.h"; sourceTree = "<group>"; };
 		6D1AE4C12615C6FC0079B870 /* UBCGPointHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBCGPointHelpers.h; sourceTree = "<group>"; };
@@ -105,8 +102,6 @@
 		6D1AE4C72615C6FC0079B870 /* UBSignatureDrawingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBSignatureDrawingModel.m; sourceTree = "<group>"; };
 		6D1AE4C82615C6FC0079B870 /* UBSignatureBezierProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSignatureBezierProvider.h; sourceTree = "<group>"; };
 		6D1AE4C92615C6FC0079B870 /* UBSignatureDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSignatureDrawingViewController.h; sourceTree = "<group>"; };
-		6D3C776725B027FA00C6E62D /* UIView+Shimmering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Shimmering.h"; sourceTree = "<group>"; };
-		6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Shimmering.m"; sourceTree = "<group>"; };
 		6D70F56E29AC7AA8003AF34A /* SBAssetExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAssetExportViewController.m; sourceTree = "<group>"; };
 		6D70F56F29AC7AA8003AF34A /* SBAssetExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAssetExportViewController.h; sourceTree = "<group>"; };
 		6D70F57129AC7AB2003AF34A /* SBAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddressBookViewController.h; sourceTree = "<group>"; };
@@ -210,8 +205,6 @@
 		6DB165922507264600D1E2AB /* SBTools+Albums.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+Albums.m"; sourceTree = "<group>"; };
 		6DB1659825072FC800D1E2AB /* SBCustomerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCustomerButton.h; sourceTree = "<group>"; };
 		6DB1659925072FC900D1E2AB /* SBCustomerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomerButton.m; sourceTree = "<group>"; };
-		6DB1659B25072FC900D1E2AB /* UIView+Animation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animation.m"; sourceTree = "<group>"; };
-		6DB1659C25072FC900D1E2AB /* UIView+Animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animation.h"; sourceTree = "<group>"; };
 		6DB1659E25072FC900D1E2AB /* SBCustomerTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBCustomerTextView.m; sourceTree = "<group>"; };
 		6DB1659F25072FC900D1E2AB /* SBCustomerTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBCustomerTextView.h; sourceTree = "<group>"; };
 		6DB165A125072FC900D1E2AB /* UITextField+MaxLength.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+MaxLength.m"; sourceTree = "<group>"; };
@@ -242,6 +235,10 @@
 		6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SBDataEmpty.m"; sourceTree = "<group>"; };
 		6DD3B6C229CAF922009DF3C7 /* SBTools+Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+Map.h"; sourceTree = "<group>"; };
 		6DD3B6C329CAF922009DF3C7 /* SBTools+Map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+Map.m"; sourceTree = "<group>"; };
+		6DD3B6C829CC28B0009DF3C7 /* SBEdgeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBEdgeLabel.h; sourceTree = "<group>"; };
+		6DD3B6C929CC28B0009DF3C7 /* SBEdgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBEdgeLabel.m; sourceTree = "<group>"; };
+		6DD3B6CB29CC4659009DF3C7 /* UITextField+Clear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Clear.m"; sourceTree = "<group>"; };
+		6DD3B6CC29CC4659009DF3C7 /* UITextField+Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Clear.h"; sourceTree = "<group>"; };
 		6DD9751024E696460001BC45 /* SBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTools.h; sourceTree = "<group>"; };
 		6DD9751124E696460001BC45 /* SBTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBTools.m; sourceTree = "<group>"; };
 		6DD9751724E6987D0001BC45 /* SBTools+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBTools+MD5.m"; sourceTree = "<group>"; };
@@ -418,8 +415,8 @@
 		6DA536A525AEF7A9008BF1A9 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
-				6D1AE4322611B5570079B870 /* EdgeLabel.h */,
-				6D1AE4312611B5570079B870 /* EdgeLabel.m */,
+				6DD3B6C829CC28B0009DF3C7 /* SBEdgeLabel.h */,
+				6DD3B6C929CC28B0009DF3C7 /* SBEdgeLabel.m */,
 				6DA5368625AED187008BF1A9 /* UILabel+TimerColor.h */,
 				6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */,
 			);
@@ -644,12 +641,8 @@
 		6DB1659A25072FC900D1E2AB /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				6DB1659C25072FC900D1E2AB /* UIView+Animation.h */,
-				6DB1659B25072FC900D1E2AB /* UIView+Animation.m */,
 				6D83F4712519A1DF000311CE /* UIView+CornerRadius.h */,
 				6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */,
-				6D3C776725B027FA00C6E62D /* UIView+Shimmering.h */,
-				6D3C776825B027FA00C6E62D /* UIView+Shimmering.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -666,6 +659,8 @@
 		6DB165A025072FC900D1E2AB /* UITextField */ = {
 			isa = PBXGroup;
 			children = (
+				6DD3B6CC29CC4659009DF3C7 /* UITextField+Clear.h */,
+				6DD3B6CB29CC4659009DF3C7 /* UITextField+Clear.m */,
 				6DB165A325072FC900D1E2AB /* UITextField+MaxLength.h */,
 				6DB165A125072FC900D1E2AB /* UITextField+MaxLength.m */,
 				6DB165A225072FC900D1E2AB /* UITextField+PlaceholderColor.h */,
@@ -893,22 +888,20 @@
 				6DA6ACE925E35E56000A1F2E /* NSMutableDictionary+Ext.m in Sources */,
 				6DA6ACF025E35E57000A1F2E /* NSURL+Category.m in Sources */,
 				6D70F58A29AC7C6C003AF34A /* ERCalendarPickerDayModel.m in Sources */,
-				6D1AE4332611B5570079B870 /* EdgeLabel.m in Sources */,
 				6D70F58C29AC7C6C003AF34A /* ERCalendarPickerViewController.m in Sources */,
 				6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */,
 				6DBB5F7A24DA9C2800596489 /* ViewController.m in Sources */,
 				6D8E2C9825C104C9008F2240 /* RITLContactCatcheManager.m in Sources */,
-				6DB165A825072FC900D1E2AB /* UIView+Animation.m in Sources */,
 				6DD9751924E6987D0001BC45 /* SBTools+MD5.m in Sources */,
 				6D8E2C9D25C104C9008F2240 /* NSString+RITLContactFile.m in Sources */,
 				6DA6ACEA25E35E56000A1F2E /* NullSafe.m in Sources */,
 				6DA6ACEC25E35E57000A1F2E /* NSError+Category.m in Sources */,
 				6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */,
 				6DA6ACEE25E35E57000A1F2E /* NSData+Ext.m in Sources */,
+				6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */,
 				6D1AE4CD2615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m in Sources */,
 				6DB165B225076B4800D1E2AB /* UIImage+SBExt.m in Sources */,
 				6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */,
-				6D3C776925B027FA00C6E62D /* UIView+Shimmering.m in Sources */,
 				6D1AE4CB2615C6FC0079B870 /* UBSignatureBezierProvider.m in Sources */,
 				6DBB5F7424DA9C2800596489 /* AppDelegate.m in Sources */,
 				6D8E2C9E25C104C9008F2240 /* RITLContactManager.m in Sources */,
@@ -918,6 +911,7 @@
 				6D8E2C9725C104C9008F2240 /* RITLContactsManager.m in Sources */,
 				6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */,
 				6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */,
+				6DD3B6CD29CC4659009DF3C7 /* UITextField+Clear.m in Sources */,
 				6D8E2C9C25C104C9008F2240 /* CNMutableContact+RITLContactFile.m in Sources */,
 				6DA6ACFB25E35E57000A1F2E /* NSDate+Ext.m in Sources */,
 				6DB165AB25072FC900D1E2AB /* UITextField+PlaceholderColor.m in Sources */,

@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SBEdgeLabel : UILabel
+@property (nonatomic,assign) UIEdgeInsets edgeInsets;
 
 @end
 

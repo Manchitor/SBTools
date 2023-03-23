@@ -133,14 +133,6 @@
     // 根据字符数量显示或者隐藏 `placeholderLabel`
     self.placeholderLabel.hidden = [@(self.text.length) boolValue];
     
-    // 禁止第一个字符输入空格或者换行
-    if (self.text.length == 1) {
-        
-        if ([self.text isEqualToString:@" "] || [self.text isEqualToString:@"\n"]) {
-            
-            self.text = @"";
-        }
-    }
     
     // 只有当maxLength字段的值不为无穷大整型也不为0时才计算限制字符数.
     if (_maxLength != NSUIntegerMax && _maxLength != 0 && self.text.length > 0) {

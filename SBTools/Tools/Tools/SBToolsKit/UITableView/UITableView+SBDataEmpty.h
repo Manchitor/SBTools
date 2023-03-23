@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UITableView (SBDataEmpty)
 
-- (void) dataEmptyWithRowCount: (NSInteger) rowCount showMessage: (NSString *) showMessage imageName: (NSString *) imageName;
+- (void) sb_data_empty_count: (NSInteger) rowCount showMessage: (NSString *) showMessage imageName: (NSString *) imageName;
 @end
 
 NS_ASSUME_NONNULL_END

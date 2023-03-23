@@ -10,7 +10,7 @@
 
 @implementation UITableView (SBDataEmpty)
 
-- (void) dataEmptyWithRowCount: (NSInteger) rowCount showMessage: (NSString *) showMessage imageName: (NSString *) imageName {
+- (void) sb_data_empty_count: (NSInteger) rowCount showMessage: (NSString *) showMessage imageName: (NSString *) imageName {
     
     if (rowCount == 0) {
         

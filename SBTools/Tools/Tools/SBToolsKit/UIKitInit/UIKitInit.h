@@ -13,7 +13,7 @@
 
 
 #pragma mark ----------UITableView（init）
-static inline  UITableView * _Nonnull TABLEVIEW_INIT(UITableViewStyle style, id _Nullable classView) {
+static inline  UITableView * _Nonnull SB_INIT_TABLEVIEW(UITableViewStyle style, id _Nullable classView) {
     UITableView *tableView = [[UITableView alloc] initWithFrame:CGRectZero style:style];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.delegate = classView;
@@ -33,7 +33,7 @@ static inline  UITableView * _Nonnull TABLEVIEW_INIT(UITableViewStyle style, id 
 }
 
 #pragma mark ----------UICollectionView（init）
-static inline UICollectionView * _Nonnull COLLECTIONVIEW_INIT(UICollectionViewLayout * _Nullable flowlLayout, id _Nullable classView) {
+static inline UICollectionView * _Nonnull SB_INIT_COLLECTIONVIEW(UICollectionViewLayout * _Nullable flowlLayout, id _Nullable classView) {
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:flowlLayout];
     collectionView.delegate = classView;
     collectionView.dataSource = classView;
@@ -42,7 +42,7 @@ static inline UICollectionView * _Nonnull COLLECTIONVIEW_INIT(UICollectionViewLa
 }
 
 #pragma mark ----------UIScrollView（init）
-static inline UIScrollView * _Nonnull SCROLLVIEW_INIT(id _Nullable classView) {
+static inline UIScrollView * _Nonnull SB_INIT_SCROLLVIEW(id _Nullable classView) {
     UIScrollView *scrollView = [UIScrollView new];
     scrollView.backgroundColor = [UIColor clearColor];
     scrollView.showsHorizontalScrollIndicator = NO;
@@ -56,7 +56,7 @@ static inline UIScrollView * _Nonnull SCROLLVIEW_INIT(id _Nullable classView) {
 }
 
 #pragma mark ----------WKWebView（init）
-static inline WKWebView * _Nonnull WEBVIEW_INIT(id _Nullable classView) {
+static inline WKWebView * _Nonnull SB_INIT_WEBVIEW(id _Nullable classView) {
     WKWebViewConfiguration *wbConfig = [[WKWebViewConfiguration alloc] init];
     //允许视频播放
     if (@available(iOS 9.0, *)) {
@@ -91,7 +91,7 @@ static inline WKWebView * _Nonnull WEBVIEW_INIT(id _Nullable classView) {
 }
 
 #pragma mark ----------UILabel（init）
-static inline UILabel * _Nonnull LABEL_INIT(NSString * _Nonnull text,UIFont *_Nonnull font, UIColor* _Nonnull textColor) {
+static inline UILabel * _Nonnull SB_INIT_LABEL(NSString * _Nonnull text,UIFont *_Nonnull font, UIColor* _Nonnull textColor) {
     
     UILabel *label = [[UILabel alloc]init];
     label.text = text;
@@ -101,7 +101,7 @@ static inline UILabel * _Nonnull LABEL_INIT(NSString * _Nonnull text,UIFont *_No
 }
 
 #pragma mark ----------UIButton（init）
-static inline UIButton * _Nonnull BUTTON_INIT(NSString * _Nullable text,UIFont *_Nullable font, UIColor* _Nullable textColor,NSString* _Nullable imageString) {
+static inline UIButton * _Nonnull SB_INIT_BUTTON(NSString * _Nullable text,UIFont *_Nullable font, UIColor* _Nullable textColor,NSString* _Nullable imageString) {
     
     UIButton *button = [[UIButton alloc]init];
     
@@ -120,15 +120,9 @@ static inline UIButton * _Nonnull BUTTON_INIT(NSString * _Nullable text,UIFont *
     return button;
 }
 
-#pragma mark ----------LINE（init）
-static inline UIView * _Nonnull LINE_INIT() {
-    UIView *line = [UIView new];
-    [line setBackgroundColor:[UIColor colorWithRed:230/255.0 green:230/255.0 blue:230/255.0 alpha:1]];
-    return line;
-}
 
 #pragma mark ----------BorderRadius（init）
-static inline UIView * _Nonnull BORDERRADIUS_INIT(UIView *_Nonnull view,float Radius, float  Width, UIColor *_Nonnull Color) {
+static inline UIView * _Nonnull SB_INIT_BORDERRADIUS(UIView *_Nonnull view,float Radius, float  Width, UIColor *_Nonnull Color) {
     [view.layer setCornerRadius:(Radius)];
     [view.layer setMasksToBounds:YES];
     [view.layer setBorderWidth:(Width)];
@@ -138,7 +132,7 @@ static inline UIView * _Nonnull BORDERRADIUS_INIT(UIView *_Nonnull view,float Ra
 }
 
 #pragma mark ----------UITextField（init）
-static inline UITextField * _Nonnull UITEXTFIELD_INIT(NSString * _Nullable placeholder,UIFont *_Nullable font, UIColor* _Nullable textColor,UIColor* _Nullable placeholderColor) {
+static inline UITextField * _Nonnull SB_INIT_UITEXTFIELD(NSString * _Nullable placeholder,UIFont *_Nullable font, UIColor* _Nullable textColor,UIColor* _Nullable placeholderColor) {
     
     UITextField *textField = [[UITextField alloc]initWithFrame:CGRectZero];
     

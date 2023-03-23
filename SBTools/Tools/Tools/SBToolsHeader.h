@@ -49,9 +49,6 @@
 //输入框最大长度限制
 #import "UITextField+MaxLength.h"
 
-//view各种动画
-#import "UIView+Animation.h"
-
 //view圆角 
 #import "UIView+CornerRadius.h"
 
@@ -74,7 +71,7 @@
 #import "UIImage+SBExt.h"
 
 //内边距UILabel
-#import "EdgeLabel.h"
+#import "SBEdgeLabel.h"
 
 
 

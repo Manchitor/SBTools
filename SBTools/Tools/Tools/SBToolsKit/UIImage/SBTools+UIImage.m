@@ -12,12 +12,12 @@
 /**
     修改图片正方向
  */
-+(UIImage *)SB_fixOrientationWithImageData:(NSData *)imageData{
++(UIImage *)sb_fix_orientation_data:(NSData *)imageData{
     UIImage* image = [UIImage imageWithData:imageData];
-   return [SBTools SB_fixOrientationWithImage:image];
+   return [SBTools sb_fix_orientation_image:image];
 }
 
-+(UIImage *)SB_fixOrientationWithImage:(UIImage *)image{
++(UIImage *)sb_fix_orientation_image:(UIImage *)image{
     // No-op if the orientation is already correct
     if (image.imageOrientation == UIImageOrientationUp)
         return image;
@@ -94,7 +94,7 @@
 }
 
 //根据图片获取图片的主色调
-+ (void)SB_getImageThemeColor:(UIImage *)img finish:(void(^)(UIColor * color))callBack {
++ (void)sb_theme_color:(UIImage *)img finish:(void(^)(UIColor * color))callBack {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         // 第一步 先把图片缩小 加快计算速度. 但越小结果误差可能越大
         int bitmapInfo = kCGBitmapByteOrderDefault | kCGImageAlphaPremultipliedLast;

@@ -10,12 +10,26 @@
 
 @implementation SBEdgeLabel
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+-(instancetype)init{
+    if (self = [super init]) {
+        _edgeInsets = UIEdgeInsetsZero;
+    }
+    return self;
 }
-*/
+
+-(instancetype)initWithFrame:(CGRect)frame{
+    if (self = [super initWithFrame:frame]) {
+        _edgeInsets = UIEdgeInsetsZero;
+    }
+    return self;
+}
+
+-(void)setEdgeInsets:(UIEdgeInsets)edgeInsets{
+    _edgeInsets = edgeInsets;
+}
+
+-(void)drawTextInRect:(CGRect)rect{
+    [super drawTextInRect:UIEdgeInsetsInsetRect(rect, self.edgeInsets)];
+}
 
 @end

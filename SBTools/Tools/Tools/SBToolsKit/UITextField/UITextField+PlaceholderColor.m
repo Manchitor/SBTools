@@ -16,6 +16,9 @@
  */
 -(void)awakeFromNib{
     [super awakeFromNib];
+    if (!self.placeholder.length) {
+        return;
+    }
     if (@available(iOS 13.0, *)) {//iOS 13 动态颜色 暗黑模式的placeholderTextColor
         
         //1.如果你的项目做了iOS 13.0 的暗黑模式适配  则不需要手动更改placeholderColor
@@ -32,7 +35,11 @@
        }
 }
 
+
 - (void)setPlaceholderColor:(UIColor *)placeholderColor{
+    if (!self.placeholder.length) {
+        return;
+    }
     if (@available(iOS 13.0, *)) {
         
         self.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:self.placeholder attributes:@{
@@ -45,6 +52,9 @@
 }
 
 - (void)setPlaceholderFont:(UIFont *)placeholderFont{
+    if (!self.placeholder.length) {
+        return;
+    }
     if (@available(iOS 13.0, *)) {
         self.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:self.placeholder attributes:@{
             NSFontAttributeName : placeholderFont
@@ -56,6 +66,9 @@
 
 - (void) setPlaceholderColor:(UIColor *)placeholderColor
              placeholderFont:(UIFont *)placeholderFont {
+    if (!self.placeholder.length) {
+        return;
+    }
     if (@available(iOS 13.0, *)) {
         self.attributedPlaceholder = [[NSMutableAttributedString alloc] initWithString:self.placeholder attributes:@{
             NSForegroundColorAttributeName : placeholderColor,

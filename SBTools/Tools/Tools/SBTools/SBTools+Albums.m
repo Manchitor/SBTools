@@ -94,7 +94,7 @@
     
     [[PHImageManager defaultManager] requestImageDataForAsset:mAsset options:nil resultHandler:^(NSData * _Nullable imageData, NSString * _Nullable dataUTI, UIImageOrientation orientation, NSDictionary * _Nullable info) {
         
-        NSData *data = UIImageJPEGRepresentation([SBTools SB_fixOrientationWithImageData:imageData], 0.5);
+        NSData *data = UIImageJPEGRepresentation([SBTools sb_fix_orientation_data:imageData], 0.5);
         //文件名
         NSString *filename = [mAsset valueForKey:@"originalFilename"];//originalFilename, （filename：文件原始的名字）
         
