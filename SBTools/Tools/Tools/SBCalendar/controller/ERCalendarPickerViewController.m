@@ -125,7 +125,7 @@
 }
 
 - (IBAction)commitButtonEvent:(id)sender {
-    if (sb_isEmptyObject(self.date)) {
+    if (!self.date) {
         return;
     }
     
@@ -266,7 +266,7 @@
 
 -(UITableView *)tableview{
     if (!_tableview) {
-        _tableview = TABLEVIEW_INIT(UITableViewStylePlain, self);
+        _tableview = SB_INIT_TABLEVIEW(UITableViewStylePlain, self);
         [_tableview registerNib:[UINib nibWithNibName:NSStringFromClass([ERCalendarPickerCell class]) bundle:[NSBundle mainBundle]] forCellReuseIdentifier:NSStringFromClass([ERCalendarPickerCell class])];
     }
     return _tableview;

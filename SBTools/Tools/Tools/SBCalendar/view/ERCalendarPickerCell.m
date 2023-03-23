@@ -63,7 +63,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     ERCalendarPickerDayModel *model = self.dataArray[indexPath.row];
-    if (sb_isEmptyObject(model.date)) {
+    if (!model.date) {
         return;
     }
     
