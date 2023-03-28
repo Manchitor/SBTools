@@ -66,8 +66,24 @@ SBToolsKit文件目录
         UIKitInit : 便捷创建组件的代码 SB_INIT_组件名；
         
         
+ SBFoundation文件目录：
+    
+    NSDictionary目录下：
+    
+        NSDictionary+SBCategory ：增加字典与json字符串的相互转化；
         
+    NSFileManager目录下：
         
+        NSFileManager+SBCategory ：对于文件的一些操作（判断是否存在、保存、删除、获取文件大小等）；
+    
+    NSString目录下：
+        
+        NSString+SBCategory ：对链接字符串进行url处理；
+    
+    
+       
+        
+       
         
         
         
