@@ -1,14 +1,16 @@
 //
-//  NSFileManager+Category.h
-//  BaseLib
+//  NSFileManager+SBCategory.h
+//  Tools
 //
-//  Created by 刘永吉 on 2018/4/10.
-//  Copyright © 2018年 lyj All rights reserved.
+//  Created by 刘永吉 on 2023/3/28.
+//  Copyright © 2023 lyj. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@interface NSFileManager (Category)
+NS_ASSUME_NONNULL_BEGIN
+
+@interface NSFileManager (SBCategory)
 
 /*!
  * @brief 判断文件是否存在
@@ -16,7 +18,7 @@
  * @param filePath 文件路径名
  * @return 返回YES表示存在，返回NO表示不存在
  */
-- (BOOL)isFileExists:(NSString *)filePath;
+- (BOOL)sb_file_exists:(NSString *)filePath;
 
 /*!
  * @brief 根据路径获取文件的大小
@@ -24,7 +26,7 @@
  * @param path 文件路径名
  * @return 文件的大小
  */
-- (long)fileSizeWithPath:(NSString *)path;
+- (long)sb_file_size_path:(NSString *)path;
 
 /**
  *  在相应目录下创建一个文件夹。
@@ -32,7 +34,7 @@
  *  @param  path 文件夹所在路径。
  *  return  成功返回YES，失败返回NO。若已存在直接返回YES。
  */
-+ (BOOL)createFolder:(NSString *)folder atPath:(NSString *)path;
++ (BOOL)sb_file_create_folder:(NSString *)folder atPath:(NSString *)path;
 
 /**
  *  保存文件到相应路径下。
@@ -41,7 +43,7 @@
  *  @param  path 文件保存的路径目录。
  *  return  成功返回YES，失败返回NO。
  */
-+ (BOOL)saveData:(NSData *)data withName:(NSString *)name atPath:(NSString *)path;
++ (BOOL)sb_file_save_data:(NSData *)data withName:(NSString *)name atPath:(NSString *)path;
 
 /**
  *  查找并返回文件。
@@ -49,7 +51,7 @@
  *  @param  path 文件所在的目录。
  *  return  成功返回文件，失败返回nil。
  */
-+ (NSData *)findFile:(NSString *)fileName atPath:(NSString *)path;
++ (NSData *)sb_file_find:(NSString *)fileName atPath:(NSString *)path;
 
 /**
  *  删除文件。
@@ -57,6 +59,8 @@
  *  @param  path 文件所在的目录。
  *  return  成功返回YES，失败返回NO。
  */
-+ (BOOL)deleteFile:(NSString *)fileName atPath:(NSString *)path;
++ (BOOL)sb_file_find_delete:(NSString *)fileName atPath:(NSString *)path;
 
 @end
+
+NS_ASSUME_NONNULL_END

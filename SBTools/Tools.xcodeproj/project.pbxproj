@@ -13,8 +13,6 @@
 		6D1AE4CC2615C6FC0079B870 /* UBSignatureDrawingModelAsync.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C42615C6FC0079B870 /* UBSignatureDrawingModelAsync.m */; };
 		6D1AE4CD2615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C52615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m */; };
 		6D1AE4CE2615C6FC0079B870 /* UBSignatureDrawingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D1AE4C72615C6FC0079B870 /* UBSignatureDrawingModel.m */; };
-		6D70F57029AC7AA8003AF34A /* SBAssetExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70F56E29AC7AA8003AF34A /* SBAssetExportViewController.m */; };
-		6D70F57329AC7AB2003AF34A /* SBAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70F57229AC7AB2003AF34A /* SBAddressBookViewController.m */; };
 		6D70F58529AC7C6C003AF34A /* ERCalendarPickerItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D70F57729AC7C6B003AF34A /* ERCalendarPickerItemCell.xib */; };
 		6D70F58629AC7C6C003AF34A /* ERCalendarPickerItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70F57829AC7C6B003AF34A /* ERCalendarPickerItemCell.m */; };
 		6D70F58729AC7C6C003AF34A /* ERCalendarPickerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D70F57929AC7C6B003AF34A /* ERCalendarPickerCell.m */; };
@@ -37,26 +35,6 @@
 		6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */; };
 		6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACA825E34D35000A1F2E /* SBTools+App.m */; };
 		6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACAC25E35C0D000A1F2E /* SBTools+Date.m */; };
-		6DA6ACE825E35E56000A1F2E /* NSDictionary+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACB425E35E56000A1F2E /* NSDictionary+Ext.m */; };
-		6DA6ACE925E35E56000A1F2E /* NSMutableDictionary+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACB525E35E56000A1F2E /* NSMutableDictionary+Ext.m */; };
-		6DA6ACEA25E35E56000A1F2E /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACB825E35E56000A1F2E /* NullSafe.m */; };
-		6DA6ACEB25E35E56000A1F2E /* NSFileManager+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACBA25E35E56000A1F2E /* NSFileManager+Category.m */; };
-		6DA6ACEC25E35E57000A1F2E /* NSError+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACBD25E35E56000A1F2E /* NSError+Category.m */; };
-		6DA6ACED25E35E57000A1F2E /* NSData+Encrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACC425E35E56000A1F2E /* NSData+Encrypt.m */; };
-		6DA6ACEE25E35E57000A1F2E /* NSData+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACC525E35E56000A1F2E /* NSData+Ext.m */; };
-		6DA6ACEF25E35E57000A1F2E /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACC625E35E56000A1F2E /* NSData+Base64.m */; };
-		6DA6ACF025E35E57000A1F2E /* NSURL+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACC925E35E56000A1F2E /* NSURL+Category.m */; };
-		6DA6ACF125E35E57000A1F2E /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACCB25E35E56000A1F2E /* NSString+URL.m */; };
-		6DA6ACF225E35E57000A1F2E /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACCD25E35E56000A1F2E /* NSString+Base64.m */; };
-		6DA6ACF325E35E57000A1F2E /* NSString+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACCF25E35E56000A1F2E /* NSString+Ext.m */; };
-		6DA6ACF425E35E57000A1F2E /* NSString+STRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACD425E35E56000A1F2E /* NSString+STRegex.m */; };
-		6DA6ACF525E35E57000A1F2E /* NSString+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACD625E35E56000A1F2E /* NSString+HTML.m */; };
-		6DA6ACF625E35E57000A1F2E /* NSString+TFEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACD725E35E56000A1F2E /* NSString+TFEncrypt.m */; };
-		6DA6ACF725E35E57000A1F2E /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACD825E35E56000A1F2E /* NSString+Path.m */; };
-		6DA6ACF825E35E57000A1F2E /* NSMutableArray+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACDB25E35E56000A1F2E /* NSMutableArray+Ext.m */; };
-		6DA6ACF925E35E57000A1F2E /* NSArray+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACDD25E35E56000A1F2E /* NSArray+Ext.m */; };
-		6DA6ACFA25E35E57000A1F2E /* NSRegularExpression+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACE225E35E56000A1F2E /* NSRegularExpression+Category.m */; };
-		6DA6ACFB25E35E57000A1F2E /* NSDate+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACE725E35E56000A1F2E /* NSDate+Ext.m */; };
 		6DA6AD1325E4FF47000A1F2E /* UncaughtExceptionHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6AD1225E4FF47000A1F2E /* UncaughtExceptionHandler.m */; };
 		6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB165922507264600D1E2AB /* SBTools+Albums.m */; };
 		6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB1659925072FC900D1E2AB /* SBCustomerButton.m */; };
@@ -78,13 +56,16 @@
 		6DD3B6C429CAF922009DF3C7 /* SBTools+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6C329CAF922009DF3C7 /* SBTools+Map.m */; };
 		6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6C929CC28B0009DF3C7 /* SBEdgeLabel.m */; };
 		6DD3B6CD29CC4659009DF3C7 /* UITextField+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6CB29CC4659009DF3C7 /* UITextField+Clear.m */; };
+		6DD3B6D229D2D191009DF3C7 /* NSDictionary+SBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6D129D2D191009DF3C7 /* NSDictionary+SBCategory.m */; };
+		6DD3B6D529D2DB02009DF3C7 /* NSFileManager+SBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6D429D2DB02009DF3C7 /* NSFileManager+SBCategory.m */; };
+		6DD3B6D829D2DCB8009DF3C7 /* NSString+SBCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6D729D2DCB8009DF3C7 /* NSString+SBCategory.m */; };
+		6DD3B6DB29D41FE7009DF3C7 /* SBAssetExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6DA29D41FE7009DF3C7 /* SBAssetExportViewController.m */; };
+		6DD3B6DE29D42099009DF3C7 /* SBAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6DD29D42099009DF3C7 /* SBAddressBookViewController.m */; };
 		6DD9751224E696460001BC45 /* SBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751124E696460001BC45 /* SBTools.m */; };
 		6DD9751924E6987D0001BC45 /* SBTools+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751724E6987D0001BC45 /* SBTools+MD5.m */; };
 		6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751B24E6990C0001BC45 /* SBTools+Device.m */; };
 		6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751E24EA5C380001BC45 /* SBTools+Base64.m */; };
 		6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9752124EA6E5E0001BC45 /* SBTools+HTML.m */; };
-		6DD9753E24ED1A960001BC45 /* TESTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9753C24ED1A960001BC45 /* TESTViewController.m */; };
-		6DD9753F24ED1A960001BC45 /* TESTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DD9753D24ED1A960001BC45 /* TESTViewController.xib */; };
 		6DF494BA25905113009B57C3 /* SBTools+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF494B925905113009B57C3 /* SBTools+NSString.m */; };
 /* End PBXBuildFile section */
 
@@ -102,10 +83,6 @@
 		6D1AE4C72615C6FC0079B870 /* UBSignatureDrawingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UBSignatureDrawingModel.m; sourceTree = "<group>"; };
 		6D1AE4C82615C6FC0079B870 /* UBSignatureBezierProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSignatureBezierProvider.h; sourceTree = "<group>"; };
 		6D1AE4C92615C6FC0079B870 /* UBSignatureDrawingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UBSignatureDrawingViewController.h; sourceTree = "<group>"; };
-		6D70F56E29AC7AA8003AF34A /* SBAssetExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAssetExportViewController.m; sourceTree = "<group>"; };
-		6D70F56F29AC7AA8003AF34A /* SBAssetExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAssetExportViewController.h; sourceTree = "<group>"; };
-		6D70F57129AC7AB2003AF34A /* SBAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddressBookViewController.h; sourceTree = "<group>"; };
-		6D70F57229AC7AB2003AF34A /* SBAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddressBookViewController.m; sourceTree = "<group>"; };
 		6D70F57629AC7C6B003AF34A /* ERCalendarPickerCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERCalendarPickerCell.h; sourceTree = "<group>"; };
 		6D70F57729AC7C6B003AF34A /* ERCalendarPickerItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ERCalendarPickerItemCell.xib; sourceTree = "<group>"; };
 		6D70F57829AC7C6B003AF34A /* ERCalendarPickerItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERCalendarPickerItemCell.m; sourceTree = "<group>"; };
@@ -149,51 +126,7 @@
 		6DA6ACA825E34D35000A1F2E /* SBTools+App.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+App.m"; sourceTree = "<group>"; };
 		6DA6ACAB25E35C0D000A1F2E /* SBTools+Date.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+Date.h"; sourceTree = "<group>"; };
 		6DA6ACAC25E35C0D000A1F2E /* SBTools+Date.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+Date.m"; sourceTree = "<group>"; };
-		6DA6ACB225E35E56000A1F2E /* NSMutableDictionary+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACB325E35E56000A1F2E /* NSDictionary+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Category.h"; sourceTree = "<group>"; };
-		6DA6ACB425E35E56000A1F2E /* NSDictionary+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Ext.m"; sourceTree = "<group>"; };
-		6DA6ACB525E35E56000A1F2E /* NSMutableDictionary+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+Ext.m"; sourceTree = "<group>"; };
-		6DA6ACB625E35E56000A1F2E /* NSDictionary+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACB825E35E56000A1F2E /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
-		6DA6ACBA25E35E56000A1F2E /* NSFileManager+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Category.m"; sourceTree = "<group>"; };
-		6DA6ACBB25E35E56000A1F2E /* NSFileManager+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Category.h"; sourceTree = "<group>"; };
-		6DA6ACBD25E35E56000A1F2E /* NSError+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+Category.m"; sourceTree = "<group>"; };
-		6DA6ACBE25E35E56000A1F2E /* NSError+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+Category.h"; sourceTree = "<group>"; };
-		6DA6ACC025E35E56000A1F2E /* NSData+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Category.h"; sourceTree = "<group>"; };
-		6DA6ACC125E35E56000A1F2E /* NSData+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACC225E35E56000A1F2E /* NSData+Encrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Encrypt.h"; sourceTree = "<group>"; };
-		6DA6ACC325E35E56000A1F2E /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		6DA6ACC425E35E56000A1F2E /* NSData+Encrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Encrypt.m"; sourceTree = "<group>"; };
-		6DA6ACC525E35E56000A1F2E /* NSData+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Ext.m"; sourceTree = "<group>"; };
-		6DA6ACC625E35E56000A1F2E /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		6DA6ACC825E35E56000A1F2E /* NSURL+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Category.h"; sourceTree = "<group>"; };
-		6DA6ACC925E35E56000A1F2E /* NSURL+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Category.m"; sourceTree = "<group>"; };
-		6DA6ACCB25E35E56000A1F2E /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
-		6DA6ACCC25E35E56000A1F2E /* NSString+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Category.h"; sourceTree = "<group>"; };
-		6DA6ACCD25E35E56000A1F2E /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
-		6DA6ACCE25E35E56000A1F2E /* NSString+STRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+STRegex.h"; sourceTree = "<group>"; };
-		6DA6ACCF25E35E56000A1F2E /* NSString+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Ext.m"; sourceTree = "<group>"; };
-		6DA6ACD025E35E56000A1F2E /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
-		6DA6ACD125E35E56000A1F2E /* NSString+TFEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TFEncrypt.h"; sourceTree = "<group>"; };
-		6DA6ACD225E35E56000A1F2E /* NSString+HTML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HTML.h"; sourceTree = "<group>"; };
-		6DA6ACD325E35E56000A1F2E /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
-		6DA6ACD425E35E56000A1F2E /* NSString+STRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+STRegex.m"; sourceTree = "<group>"; };
-		6DA6ACD525E35E56000A1F2E /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
-		6DA6ACD625E35E56000A1F2E /* NSString+HTML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTML.m"; sourceTree = "<group>"; };
-		6DA6ACD725E35E56000A1F2E /* NSString+TFEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TFEncrypt.m"; sourceTree = "<group>"; };
-		6DA6ACD825E35E56000A1F2E /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
-		6DA6ACD925E35E56000A1F2E /* NSString+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACDB25E35E56000A1F2E /* NSMutableArray+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Ext.m"; sourceTree = "<group>"; };
-		6DA6ACDC25E35E56000A1F2E /* NSArray+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACDD25E35E56000A1F2E /* NSArray+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Ext.m"; sourceTree = "<group>"; };
-		6DA6ACDE25E35E56000A1F2E /* NSMutableArray+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACDF25E35E56000A1F2E /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
-		6DA6ACE125E35E56000A1F2E /* NSRegularExpression+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRegularExpression+Category.h"; sourceTree = "<group>"; };
-		6DA6ACE225E35E56000A1F2E /* NSRegularExpression+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRegularExpression+Category.m"; sourceTree = "<group>"; };
 		6DA6ACE325E35E56000A1F2E /* Founcation+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Founcation+Category.h"; sourceTree = "<group>"; };
-		6DA6ACE525E35E56000A1F2E /* NSDate+Ext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Ext.h"; sourceTree = "<group>"; };
-		6DA6ACE625E35E56000A1F2E /* NSDate+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Category.h"; sourceTree = "<group>"; };
-		6DA6ACE725E35E56000A1F2E /* NSDate+Ext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Ext.m"; sourceTree = "<group>"; };
 		6DA6AD1125E4FF47000A1F2E /* UncaughtExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncaughtExceptionHandler.h; sourceTree = "<group>"; };
 		6DA6AD1225E4FF47000A1F2E /* UncaughtExceptionHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncaughtExceptionHandler.m; sourceTree = "<group>"; };
 		6DAF9D7F24E68218001CFD34 /* SBTools_Macro_Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_Color.h; sourceTree = "<group>"; };
@@ -239,6 +172,16 @@
 		6DD3B6C929CC28B0009DF3C7 /* SBEdgeLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBEdgeLabel.m; sourceTree = "<group>"; };
 		6DD3B6CB29CC4659009DF3C7 /* UITextField+Clear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Clear.m"; sourceTree = "<group>"; };
 		6DD3B6CC29CC4659009DF3C7 /* UITextField+Clear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Clear.h"; sourceTree = "<group>"; };
+		6DD3B6D029D2D191009DF3C7 /* NSDictionary+SBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+SBCategory.h"; sourceTree = "<group>"; };
+		6DD3B6D129D2D191009DF3C7 /* NSDictionary+SBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SBCategory.m"; sourceTree = "<group>"; };
+		6DD3B6D329D2DB02009DF3C7 /* NSFileManager+SBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+SBCategory.h"; sourceTree = "<group>"; };
+		6DD3B6D429D2DB02009DF3C7 /* NSFileManager+SBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+SBCategory.m"; sourceTree = "<group>"; };
+		6DD3B6D629D2DCB8009DF3C7 /* NSString+SBCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+SBCategory.h"; sourceTree = "<group>"; };
+		6DD3B6D729D2DCB8009DF3C7 /* NSString+SBCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBCategory.m"; sourceTree = "<group>"; };
+		6DD3B6D929D41FE7009DF3C7 /* SBAssetExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAssetExportViewController.h; sourceTree = "<group>"; };
+		6DD3B6DA29D41FE7009DF3C7 /* SBAssetExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAssetExportViewController.m; sourceTree = "<group>"; };
+		6DD3B6DC29D42099009DF3C7 /* SBAddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAddressBookViewController.h; sourceTree = "<group>"; };
+		6DD3B6DD29D42099009DF3C7 /* SBAddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAddressBookViewController.m; sourceTree = "<group>"; };
 		6DD9751024E696460001BC45 /* SBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTools.h; sourceTree = "<group>"; };
 		6DD9751124E696460001BC45 /* SBTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBTools.m; sourceTree = "<group>"; };
 		6DD9751724E6987D0001BC45 /* SBTools+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SBTools+MD5.m"; sourceTree = "<group>"; };
@@ -249,9 +192,6 @@
 		6DD9751E24EA5C380001BC45 /* SBTools+Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+Base64.m"; sourceTree = "<group>"; };
 		6DD9752024EA6E5E0001BC45 /* SBTools+HTML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+HTML.h"; sourceTree = "<group>"; };
 		6DD9752124EA6E5E0001BC45 /* SBTools+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+HTML.m"; sourceTree = "<group>"; };
-		6DD9753B24ED1A960001BC45 /* TESTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TESTViewController.h; sourceTree = "<group>"; };
-		6DD9753C24ED1A960001BC45 /* TESTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESTViewController.m; sourceTree = "<group>"; };
-		6DD9753D24ED1A960001BC45 /* TESTViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TESTViewController.xib; sourceTree = "<group>"; };
 		6DD9754024ED28FA0001BC45 /* SBTools_Macro_Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_Block.h; sourceTree = "<group>"; };
 		6DF494B825905113009B57C3 /* SBTools+NSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+NSString.h"; sourceTree = "<group>"; };
 		6DF494B925905113009B57C3 /* SBTools+NSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+NSString.m"; sourceTree = "<group>"; };
@@ -303,24 +243,6 @@
 				6D1AE4C52615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m */,
 			);
 			path = Internal;
-			sourceTree = "<group>";
-		};
-		6D70F56C29AC7A62003AF34A /* SBAssetExport */ = {
-			isa = PBXGroup;
-			children = (
-				6D70F56F29AC7AA8003AF34A /* SBAssetExportViewController.h */,
-				6D70F56E29AC7AA8003AF34A /* SBAssetExportViewController.m */,
-			);
-			path = SBAssetExport;
-			sourceTree = "<group>";
-		};
-		6D70F56D29AC7A63003AF34A /* SBAddressBook */ = {
-			isa = PBXGroup;
-			children = (
-				6D70F57129AC7AB2003AF34A /* SBAddressBookViewController.h */,
-				6D70F57229AC7AB2003AF34A /* SBAddressBookViewController.m */,
-			);
-			path = SBAddressBook;
 			sourceTree = "<group>";
 		};
 		6D70F57429AC7B09003AF34A /* SBCalendar */ = {
@@ -389,6 +311,8 @@
 		6D8E2C4825BFBD07008F2240 /* AddressBook */ = {
 			isa = PBXGroup;
 			children = (
+				6DD3B6DC29D42099009DF3C7 /* SBAddressBookViewController.h */,
+				6DD3B6DD29D42099009DF3C7 /* SBAddressBookViewController.m */,
 				6D8E2C9025C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.h */,
 				6D8E2C8B25C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.m */,
 				6D8E2C8F25C104C9008F2240 /* CNMutableContact+RITLContactFile.h */,
@@ -428,15 +352,8 @@
 			children = (
 				6DA6ACE325E35E56000A1F2E /* Founcation+Category.h */,
 				6DA6ACB125E35E56000A1F2E /* NSDictionary */,
-				6DA6ACB725E35E56000A1F2E /* NSNull */,
 				6DA6ACB925E35E56000A1F2E /* NSFileManager */,
-				6DA6ACBC25E35E56000A1F2E /* NSError */,
-				6DA6ACBF25E35E56000A1F2E /* NSData */,
-				6DA6ACC725E35E56000A1F2E /* NSURL */,
 				6DA6ACCA25E35E56000A1F2E /* NSString */,
-				6DA6ACDA25E35E56000A1F2E /* NSArray */,
-				6DA6ACE025E35E56000A1F2E /* NSRegularExpression */,
-				6DA6ACE425E35E56000A1F2E /* NSDate */,
 			);
 			path = SBFoundation;
 			sourceTree = "<group>";
@@ -444,115 +361,28 @@
 		6DA6ACB125E35E56000A1F2E /* NSDictionary */ = {
 			isa = PBXGroup;
 			children = (
-				6DA6ACB325E35E56000A1F2E /* NSDictionary+Category.h */,
-				6DA6ACB625E35E56000A1F2E /* NSDictionary+Ext.h */,
-				6DA6ACB425E35E56000A1F2E /* NSDictionary+Ext.m */,
-				6DA6ACB225E35E56000A1F2E /* NSMutableDictionary+Ext.h */,
-				6DA6ACB525E35E56000A1F2E /* NSMutableDictionary+Ext.m */,
+				6DD3B6D029D2D191009DF3C7 /* NSDictionary+SBCategory.h */,
+				6DD3B6D129D2D191009DF3C7 /* NSDictionary+SBCategory.m */,
 			);
 			path = NSDictionary;
-			sourceTree = "<group>";
-		};
-		6DA6ACB725E35E56000A1F2E /* NSNull */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACB825E35E56000A1F2E /* NullSafe.m */,
-			);
-			path = NSNull;
 			sourceTree = "<group>";
 		};
 		6DA6ACB925E35E56000A1F2E /* NSFileManager */ = {
 			isa = PBXGroup;
 			children = (
-				6DA6ACBB25E35E56000A1F2E /* NSFileManager+Category.h */,
-				6DA6ACBA25E35E56000A1F2E /* NSFileManager+Category.m */,
+				6DD3B6D329D2DB02009DF3C7 /* NSFileManager+SBCategory.h */,
+				6DD3B6D429D2DB02009DF3C7 /* NSFileManager+SBCategory.m */,
 			);
 			path = NSFileManager;
-			sourceTree = "<group>";
-		};
-		6DA6ACBC25E35E56000A1F2E /* NSError */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACBE25E35E56000A1F2E /* NSError+Category.h */,
-				6DA6ACBD25E35E56000A1F2E /* NSError+Category.m */,
-			);
-			path = NSError;
-			sourceTree = "<group>";
-		};
-		6DA6ACBF25E35E56000A1F2E /* NSData */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACC325E35E56000A1F2E /* NSData+Base64.h */,
-				6DA6ACC625E35E56000A1F2E /* NSData+Base64.m */,
-				6DA6ACC025E35E56000A1F2E /* NSData+Category.h */,
-				6DA6ACC225E35E56000A1F2E /* NSData+Encrypt.h */,
-				6DA6ACC425E35E56000A1F2E /* NSData+Encrypt.m */,
-				6DA6ACC125E35E56000A1F2E /* NSData+Ext.h */,
-				6DA6ACC525E35E56000A1F2E /* NSData+Ext.m */,
-			);
-			path = NSData;
-			sourceTree = "<group>";
-		};
-		6DA6ACC725E35E56000A1F2E /* NSURL */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACC825E35E56000A1F2E /* NSURL+Category.h */,
-				6DA6ACC925E35E56000A1F2E /* NSURL+Category.m */,
-			);
-			path = NSURL;
 			sourceTree = "<group>";
 		};
 		6DA6ACCA25E35E56000A1F2E /* NSString */ = {
 			isa = PBXGroup;
 			children = (
-				6DA6ACD525E35E56000A1F2E /* NSString+Base64.h */,
-				6DA6ACCD25E35E56000A1F2E /* NSString+Base64.m */,
-				6DA6ACCC25E35E56000A1F2E /* NSString+Category.h */,
-				6DA6ACD925E35E56000A1F2E /* NSString+Ext.h */,
-				6DA6ACCF25E35E56000A1F2E /* NSString+Ext.m */,
-				6DA6ACD225E35E56000A1F2E /* NSString+HTML.h */,
-				6DA6ACD625E35E56000A1F2E /* NSString+HTML.m */,
-				6DA6ACD025E35E56000A1F2E /* NSString+Path.h */,
-				6DA6ACD825E35E56000A1F2E /* NSString+Path.m */,
-				6DA6ACCE25E35E56000A1F2E /* NSString+STRegex.h */,
-				6DA6ACD425E35E56000A1F2E /* NSString+STRegex.m */,
-				6DA6ACD125E35E56000A1F2E /* NSString+TFEncrypt.h */,
-				6DA6ACD725E35E56000A1F2E /* NSString+TFEncrypt.m */,
-				6DA6ACD325E35E56000A1F2E /* NSString+URL.h */,
-				6DA6ACCB25E35E56000A1F2E /* NSString+URL.m */,
+				6DD3B6D629D2DCB8009DF3C7 /* NSString+SBCategory.h */,
+				6DD3B6D729D2DCB8009DF3C7 /* NSString+SBCategory.m */,
 			);
 			path = NSString;
-			sourceTree = "<group>";
-		};
-		6DA6ACDA25E35E56000A1F2E /* NSArray */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACDF25E35E56000A1F2E /* NSArray+Category.h */,
-				6DA6ACDC25E35E56000A1F2E /* NSArray+Ext.h */,
-				6DA6ACDD25E35E56000A1F2E /* NSArray+Ext.m */,
-				6DA6ACDE25E35E56000A1F2E /* NSMutableArray+Ext.h */,
-				6DA6ACDB25E35E56000A1F2E /* NSMutableArray+Ext.m */,
-			);
-			path = NSArray;
-			sourceTree = "<group>";
-		};
-		6DA6ACE025E35E56000A1F2E /* NSRegularExpression */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACE125E35E56000A1F2E /* NSRegularExpression+Category.h */,
-				6DA6ACE225E35E56000A1F2E /* NSRegularExpression+Category.m */,
-			);
-			path = NSRegularExpression;
-			sourceTree = "<group>";
-		};
-		6DA6ACE425E35E56000A1F2E /* NSDate */ = {
-			isa = PBXGroup;
-			children = (
-				6DA6ACE625E35E56000A1F2E /* NSDate+Category.h */,
-				6DA6ACE525E35E56000A1F2E /* NSDate+Ext.h */,
-				6DA6ACE725E35E56000A1F2E /* NSDate+Ext.m */,
-			);
-			path = NSDate;
 			sourceTree = "<group>";
 		};
 		6DA6AD1025E4FF47000A1F2E /* SBCrashException */ = {
@@ -680,6 +510,8 @@
 		6DBA9929291908BC001203B2 /* SBAssetExportSession */ = {
 			isa = PBXGroup;
 			children = (
+				6DD3B6D929D41FE7009DF3C7 /* SBAssetExportViewController.h */,
+				6DD3B6DA29D41FE7009DF3C7 /* SBAssetExportViewController.m */,
 				6DBA992D29190B0C001203B2 /* SBAssetExportSession.h */,
 				6DBA992E29190B0C001203B2 /* SBAssetExportSession.m */,
 				6DBA99302919F32D001203B2 /* SBAssetExportCompression.h */,
@@ -715,9 +547,6 @@
 				6DBB5F7324DA9C2800596489 /* AppDelegate.m */,
 				6DBB5F7824DA9C2800596489 /* ViewController.h */,
 				6DBB5F7924DA9C2800596489 /* ViewController.m */,
-				6DD9753B24ED1A960001BC45 /* TESTViewController.h */,
-				6DD9753C24ED1A960001BC45 /* TESTViewController.m */,
-				6DD9753D24ED1A960001BC45 /* TESTViewController.xib */,
 				6DBB5F7B24DA9C2800596489 /* Main.storyboard */,
 				6DBB5F7E24DA9C2B00596489 /* Assets.xcassets */,
 				6DBB5F8024DA9C2B00596489 /* LaunchScreen.storyboard */,
@@ -738,8 +567,6 @@
 				6D83F4FB251DA16E000311CE /* SBToolLibrary */,
 				6DA6AD1025E4FF47000A1F2E /* SBCrashException */,
 				6DBA9929291908BC001203B2 /* SBAssetExportSession */,
-				6D70F56C29AC7A62003AF34A /* SBAssetExport */,
-				6D70F56D29AC7A63003AF34A /* SBAddressBook */,
 				6D70F57429AC7B09003AF34A /* SBCalendar */,
 			);
 			path = Tools;
@@ -825,7 +652,6 @@
 				6DBB5F8224DA9C2B00596489 /* LaunchScreen.storyboard in Resources */,
 				6D70F58529AC7C6C003AF34A /* ERCalendarPickerItemCell.xib in Resources */,
 				6DBB5F7F24DA9C2B00596489 /* Assets.xcassets in Resources */,
-				6DD9753F24ED1A960001BC45 /* TESTViewController.xib in Resources */,
 				6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */,
 				6D70F58B29AC7C6C003AF34A /* ERCalendarPickerViewController.xib in Resources */,
 				6DBB5F7D24DA9C2800596489 /* Main.storyboard in Resources */,
@@ -882,22 +708,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA6ACF925E35E57000A1F2E /* NSArray+Ext.m in Sources */,
-				6DA6ACEB25E35E56000A1F2E /* NSFileManager+Category.m in Sources */,
 				6DB165AA25072FC900D1E2AB /* UITextField+MaxLength.m in Sources */,
-				6DA6ACE925E35E56000A1F2E /* NSMutableDictionary+Ext.m in Sources */,
-				6DA6ACF025E35E57000A1F2E /* NSURL+Category.m in Sources */,
 				6D70F58A29AC7C6C003AF34A /* ERCalendarPickerDayModel.m in Sources */,
 				6D70F58C29AC7C6C003AF34A /* ERCalendarPickerViewController.m in Sources */,
 				6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */,
 				6DBB5F7A24DA9C2800596489 /* ViewController.m in Sources */,
 				6D8E2C9825C104C9008F2240 /* RITLContactCatcheManager.m in Sources */,
+				6DD3B6D829D2DCB8009DF3C7 /* NSString+SBCategory.m in Sources */,
 				6DD9751924E6987D0001BC45 /* SBTools+MD5.m in Sources */,
 				6D8E2C9D25C104C9008F2240 /* NSString+RITLContactFile.m in Sources */,
-				6DA6ACEA25E35E56000A1F2E /* NullSafe.m in Sources */,
-				6DA6ACEC25E35E57000A1F2E /* NSError+Category.m in Sources */,
+				6DD3B6D229D2D191009DF3C7 /* NSDictionary+SBCategory.m in Sources */,
 				6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */,
-				6DA6ACEE25E35E57000A1F2E /* NSData+Ext.m in Sources */,
 				6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */,
 				6D1AE4CD2615C6FC0079B870 /* UIBezierPath+UBWeightedPoint.m in Sources */,
 				6DB165B225076B4800D1E2AB /* UIImage+SBExt.m in Sources */,
@@ -906,33 +727,27 @@
 				6DBB5F7424DA9C2800596489 /* AppDelegate.m in Sources */,
 				6D8E2C9E25C104C9008F2240 /* RITLContactManager.m in Sources */,
 				6DA6AD1325E4FF47000A1F2E /* UncaughtExceptionHandler.m in Sources */,
+				6DD3B6D529D2DB02009DF3C7 /* NSFileManager+SBCategory.m in Sources */,
 				6DBB5F8524DA9C2B00596489 /* main.m in Sources */,
 				6D8E2C9B25C104C9008F2240 /* CNContactFetchRequest+RITLContactFile.m in Sources */,
 				6D8E2C9725C104C9008F2240 /* RITLContactsManager.m in Sources */,
 				6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */,
 				6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */,
+				6DD3B6DE29D42099009DF3C7 /* SBAddressBookViewController.m in Sources */,
+				6DD3B6DB29D41FE7009DF3C7 /* SBAssetExportViewController.m in Sources */,
 				6DD3B6CD29CC4659009DF3C7 /* UITextField+Clear.m in Sources */,
 				6D8E2C9C25C104C9008F2240 /* CNMutableContact+RITLContactFile.m in Sources */,
-				6DA6ACFB25E35E57000A1F2E /* NSDate+Ext.m in Sources */,
 				6DB165AB25072FC900D1E2AB /* UITextField+PlaceholderColor.m in Sources */,
-				6DA6ACF725E35E57000A1F2E /* NSString+Path.m in Sources */,
-				6DA6ACEF25E35E57000A1F2E /* NSData+Base64.m in Sources */,
 				6D70F58929AC7C6C003AF34A /* ERCalendarPickerMonthModel.m in Sources */,
 				6D8E2C9A25C104C9008F2240 /* RITLContactObjectManager.m in Sources */,
 				6D8E2C9925C104C9008F2240 /* RITLContactObject.m in Sources */,
 				6DF494BA25905113009B57C3 /* SBTools+NSString.m in Sources */,
 				6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */,
-				6DA6ACF525E35E57000A1F2E /* NSString+HTML.m in Sources */,
-				6D70F57329AC7AB2003AF34A /* SBAddressBookViewController.m in Sources */,
 				6D70F58629AC7C6C003AF34A /* ERCalendarPickerItemCell.m in Sources */,
-				6DA6ACE825E35E56000A1F2E /* NSDictionary+Ext.m in Sources */,
-				6DA6ACF225E35E57000A1F2E /* NSString+Base64.m in Sources */,
 				6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */,
 				6DBA992F29190B0C001203B2 /* SBAssetExportSession.m in Sources */,
-				6DD9753E24ED1A960001BC45 /* TESTViewController.m in Sources */,
 				6DD3B6C429CAF922009DF3C7 /* SBTools+Map.m in Sources */,
 				6D8939C025B5391000FFC97F /* SBNumberScroller.m in Sources */,
-				6DA6ACED25E35E57000A1F2E /* NSData+Encrypt.m in Sources */,
 				6DBA99322919F32D001203B2 /* SBAssetExportCompression.m in Sources */,
 				6DD9751224E696460001BC45 /* SBTools.m in Sources */,
 				6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */,
@@ -941,17 +756,10 @@
 				6D1AE4CA2615C6FC0079B870 /* UBSignatureDrawingViewController.m in Sources */,
 				6D1AE4CC2615C6FC0079B870 /* UBSignatureDrawingModelAsync.m in Sources */,
 				6D1AE4CE2615C6FC0079B870 /* UBSignatureDrawingModel.m in Sources */,
-				6D70F57029AC7AA8003AF34A /* SBAssetExportViewController.m in Sources */,
 				6DB165AE25072FEA00D1E2AB /* SBTools+UIImage.m in Sources */,
-				6DA6ACF425E35E57000A1F2E /* NSString+STRegex.m in Sources */,
 				6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */,
-				6DA6ACF825E35E57000A1F2E /* NSMutableArray+Ext.m in Sources */,
-				6DA6ACF625E35E57000A1F2E /* NSString+TFEncrypt.m in Sources */,
-				6DA6ACFA25E35E57000A1F2E /* NSRegularExpression+Category.m in Sources */,
 				6D8E2C9625C104C9008F2240 /* RITLContactObject+RITLContactFile.m in Sources */,
-				6DA6ACF325E35E57000A1F2E /* NSString+Ext.m in Sources */,
 				6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */,
-				6DA6ACF125E35E57000A1F2E /* NSString+URL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

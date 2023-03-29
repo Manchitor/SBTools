@@ -43,7 +43,7 @@ BOOL sb_string_empty(NSString *string){
 
 /// 去除字符串中的换行
 /// @param string 字符串
-+(NSString *)sb_string_trim:(NSString *)string{
++ (NSString *)sb_string_trim:(NSString *)string{
     //1.去除掉首尾的空白字符和换行字符
     string = [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
     //2.去除掉其它位置的空白字符和换行字符

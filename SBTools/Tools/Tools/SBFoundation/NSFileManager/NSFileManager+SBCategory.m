@@ -1,24 +1,22 @@
 //
-//  NSFileManager+Category.m
-//  BaseLib
+//  NSFileManager+SBCategory.m
+//  Tools
 //
-//  Created by 刘永吉 on 2018/4/10.
-//  Copyright © 2018年 lyj All rights reserved.
+//  Created by 刘永吉 on 2023/3/28.
+//  Copyright © 2023 lyj. All rights reserved.
 //
 
-#import "NSFileManager+Category.h"
+#import "NSFileManager+SBCategory.h"
 
-@implementation NSFileManager (Category)
+@implementation NSFileManager (SBCategory)
 
-- (BOOL)isFileExists:(NSString *)filePath
-{
+- (BOOL)sb_file_exists:(NSString *)filePath{
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL result = [fileManager fileExistsAtPath:filePath];
     return result;
 }
 
-- (long)fileSizeWithPath:(NSString *)path
-{
+- (long)sb_file_size_path:(NSString *)path{
     NSError *error = nil;
     NSDictionary *attributes = [[NSFileManager defaultManager] attributesOfItemAtPath:path
                                                                                 error:&error];
@@ -30,7 +28,7 @@
     return fileSize.integerValue;
 }
 
-+ (BOOL)createFolder:(NSString *)folder atPath:(NSString *)path
++ (BOOL)sb_file_create_folder:(NSString *)folder atPath:(NSString *)path
 {
     NSString *savePath = [path stringByAppendingPathComponent:folder];
     NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -45,7 +43,7 @@
     return [fileManager fileExistsAtPath:savePath isDirectory:&isDirectory];
 }
 
-+ (BOOL)saveData:(NSData *)data withName:(NSString *)name atPath:(NSString *)path
++ (BOOL)sb_file_save_data:(NSData *)data withName:(NSString *)name atPath:(NSString *)path
 {
     if (data && name && path)
     {
@@ -56,7 +54,7 @@
     return NO;
 }
 
-+ (NSData *)findFile:(NSString *)fileName atPath:(NSString *)path
++ (NSData *)sb_file_find:(NSString *)fileName atPath:(NSString *)path
 {
     NSData *data = nil;
     if (fileName && path)
@@ -73,7 +71,7 @@
     return data;
 }
 
-+ (BOOL)deleteFile:(NSString *)fileName atPath:(NSString *)path
++ (BOOL)sb_file_find_delete:(NSString *)fileName atPath:(NSString *)path
 {
     NSFileManager *fileManager = [NSFileManager defaultManager];
     NSString *filePath = [path stringByAppendingPathComponent:fileName];
