@@ -66,8 +66,75 @@ SBToolsKit文件目录
         UIKitInit : 便捷创建组件的代码 SB_INIT_组件名；
         
         
+ SBFoundation文件目录：
+    
+    NSDictionary目录下：
+    
+        NSDictionary+SBCategory ：增加字典与json字符串的相互转化；
+        
+    NSFileManager目录下：
+        
+        NSFileManager+SBCategory ：对于文件的一些操作（判断是否存在、保存、删除、获取文件大小等）；
+    
+    NSString目录下：
+        
+        NSString+SBCategory ：对链接字符串进行url处理；
         
         
+ SBToolsMacro文件目录：
+ 
+        SBTools_Macro_Font：字体的一些宏定义；
+        
+        SBTools_Macro_Path：系统目录的一些宏定义（沙盒、缓存等）；
+        
+        SBTools_Macro_Block：block 的宏定义；
+        
+        SBTools_Macro_Color：颜色的一些宏定义；
+        
+        SBTools_Macro_System：系统常量的一些宏定义（屏幕宽高、版本号、导航栏高度、状态栏高度、系统版本等）；
+        
+ 
+SBToolLibrary文件目录：
+
+    Signature目录下：
+        
+        UBSignatureDrawingViewController：签名控制器（用于签名、生成图片）；
+        
+    AddressBook目录下：
+    
+        SBAddressBookViewController：通讯录相关操作展示示例；
+        
+    NumberScroller目下：
+        
+        SBNumberScroller：数字滚动展示控件；
+        
+        
+SBCrashException文件目录：
+
+    UncaughtExceptionHandler：常见的iOS 异常捕获，防止线上崩溃（didFinishLaunchingWithOptions中初始化：    
+    
+    [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];）；
+    
+    
+SBAssetExportSession文件目录：
+    
+    SBAssetExportViewController：视频压缩
+    
+    1.采用 AVAssetReader和AVAssetWriter 实现逐帧压缩(优点是压缩的定制化比较好, 可以设置导出视频的编码格式,比特率, 帧率, 尺寸及视频质量, 压缩之后的画质令人满意, 缺点是视频时长较长时, 压缩时间较长)；
+    
+    2.采用 AVAssetExportSession(优点是压缩快, 能有效的减少视频的文件大小, 但是定制化不友好, 压缩之后的视频画质确实令人不太满意)；
+    
+    
+SBCalendar文件目录：
+
+    ERCalendarPickerViewController：弹框式上下滚动日历示例（可设置最小展示月份、最大展示月份；基于UITableview\UICollectionView,可定制样式）；
+    
+
+
+    
+       
+        
+       
         
         
         
