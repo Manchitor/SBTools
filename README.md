@@ -102,7 +102,7 @@ SBToolLibrary文件目录：
         
     AddressBook目录下：
     
-        SBAddressBookViewController：通讯录相关操作展示示例；
+        RITLContactsManager：带索引的通讯录相关操作展示示例；
         
     NumberScroller目下：
         
@@ -129,6 +129,11 @@ SBCalendar文件目录：
 
     ERCalendarPickerViewController：弹框式上下滚动日历示例（可设置最小展示月份、最大展示月份；基于UITableview\UICollectionView,可定制样式）；
     
+SBAddressBook文件目录：
+
+    SBAddressBookViewController：带索引的通讯录列表示例，附带添加联系人到通讯录；
+    
+
 
 
     
