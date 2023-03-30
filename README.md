@@ -96,39 +96,41 @@ SBToolsKit文件目录
  
 SBToolLibrary文件目录：
 
-    Signature目录下：
+    SBSignature目录下：
         
         UBSignatureDrawingViewController：签名控制器（用于签名、生成图片）；
         
-    AddressBook目录下：
+    SBAddressBook目录：
     
-        SBAddressBookViewController：通讯录相关操作展示示例；
+        RITLContactsManager：带索引的通讯录相关操作展示示例；
         
-    NumberScroller目下：
+    SBNumberScroller目录：
         
         SBNumberScroller：数字滚动展示控件；
         
-        
-SBCrashException文件目录：
+    SBCrashException文件目录：
 
-    UncaughtExceptionHandler：常见的iOS 异常捕获，防止线上崩溃（didFinishLaunchingWithOptions中初始化：    
+        UncaughtExceptionHandler：常见的iOS 异常捕获，防止线上崩溃（didFinishLaunchingWithOptions中初始化：    
     
-    [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];）；
+        [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];）；
     
+    SBAssetExportSession文件目录：
     
-SBAssetExportSession文件目录：
+        SBAssetExportViewController：视频压缩
     
-    SBAssetExportViewController：视频压缩
+        1.采用 AVAssetReader和AVAssetWriter 实现逐帧压缩(优点是压缩的定制化比较好, 可以设置导出视频的编码格式,比特率, 帧率, 尺寸及视频质量, 压缩之后的画质令人满意, 缺点是视频时长较长时, 压缩时间较长)；
     
-    1.采用 AVAssetReader和AVAssetWriter 实现逐帧压缩(优点是压缩的定制化比较好, 可以设置导出视频的编码格式,比特率, 帧率, 尺寸及视频质量, 压缩之后的画质令人满意, 缺点是视频时长较长时, 压缩时间较长)；
+        2.采用 AVAssetExportSession(优点是压缩快, 能有效的减少视频的文件大小, 但是定制化不友好, 压缩之后的视频画质确实令人不太满意)；
     
-    2.采用 AVAssetExportSession(优点是压缩快, 能有效的减少视频的文件大小, 但是定制化不友好, 压缩之后的视频画质确实令人不太满意)；
-    
-    
-SBCalendar文件目录：
+    SBCalendar文件目录：
 
-    ERCalendarPickerViewController：弹框式上下滚动日历示例（可设置最小展示月份、最大展示月份；基于UITableview\UICollectionView,可定制样式）；
+        ERCalendarPickerViewController：弹框式上下滚动日历示例（可设置最小展示月份、最大展示月份；基于UITableview\UICollectionView,可定制样式）；
     
+    SBAddressBook文件目录：
+
+        SBAddressBookViewController：带索引的通讯录列表示例，附带添加联系人到通讯录；
+    
+
 
 
     
