@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "MainViewController.h"
 #import "UncaughtExceptionHandler.h"
 @interface AppDelegate ()
 
@@ -21,7 +21,10 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    self.window.rootViewController = [[ViewController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:[[MainViewController alloc]init]];
+    self.window.rootViewController = nav;
+    
     [self.window makeKeyAndVisible];
     
     [UncaughtExceptionHandler installUncaughtExceptionHandler:YES showAlert:YES];

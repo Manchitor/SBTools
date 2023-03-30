@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "SBToolsHeader.h"
 
 @interface ViewController ()
 
@@ -19,7 +18,4 @@
     [super viewDidLoad];
 }
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-}
 @end

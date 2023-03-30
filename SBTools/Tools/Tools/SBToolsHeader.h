@@ -28,6 +28,9 @@
 //字符串处理
 #import "SBTools+NSString.h"
 
+//时间处理
+#import "SBTools+Date.h"
+
 //判断某些app是否安装
 #import "SBTools+App.h"
 
