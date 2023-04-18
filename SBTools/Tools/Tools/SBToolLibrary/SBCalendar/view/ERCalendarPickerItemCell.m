@@ -6,7 +6,6 @@
 //
 
 #import "ERCalendarPickerItemCell.h"
-#import "SBToolsHeader.h"
 
 @interface ERCalendarPickerItemCell ()
 @property (weak, nonatomic) IBOutlet UILabel *titlelabel;

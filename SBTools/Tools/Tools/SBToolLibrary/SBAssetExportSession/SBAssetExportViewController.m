@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = UIColor.whiteColor;
+    
     //1.采用 AVAssetReader和AVAssetWriter
     [self assetReaderWriterExport];
     

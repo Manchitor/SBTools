@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		44595056ABAE5BDE7F0B1180 /* Pods_Tools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3768288522E5EC7E1DB3696B /* Pods_Tools.framework */; };
+		6D382D5929EE46D400F5DCCD /* SBSpeechAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D382D5829EE46D400F5DCCD /* SBSpeechAudio.m */; };
+		6D382D5D29EE494F00F5DCCD /* SBAISpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D382D5B29EE494F00F5DCCD /* SBAISpeechViewController.m */; };
+		6D382D5E29EE494F00F5DCCD /* SBAISpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D382D5C29EE494F00F5DCCD /* SBAISpeechViewController.xib */; };
 		6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */; };
 		6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */; };
 		6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACA825E34D35000A1F2E /* SBTools+App.m */; };
@@ -72,12 +75,19 @@
 		6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751B24E6990C0001BC45 /* SBTools+Device.m */; };
 		6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9751E24EA5C380001BC45 /* SBTools+Base64.m */; };
 		6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD9752124EA6E5E0001BC45 /* SBTools+HTML.m */; };
+		6DF0D8AA29DAAE0B00FF8A13 /* SBPhotoRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0D8A729DAAE0B00FF8A13 /* SBPhotoRevealViewController.m */; };
+		6DF0D8AB29DAAE0B00FF8A13 /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF0D8A829DAAE0B00FF8A13 /* PhotoView.m */; };
 		6DF494BA25905113009B57C3 /* SBTools+NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF494B925905113009B57C3 /* SBTools+NSString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3768288522E5EC7E1DB3696B /* Pods_Tools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40D7A4980C0CB7E434BE2934 /* Pods-Tools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.release.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.release.xcconfig"; sourceTree = "<group>"; };
+		6D382D5729EE46D400F5DCCD /* SBSpeechAudio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBSpeechAudio.h; sourceTree = "<group>"; };
+		6D382D5829EE46D400F5DCCD /* SBSpeechAudio.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBSpeechAudio.m; sourceTree = "<group>"; };
+		6D382D5A29EE494F00F5DCCD /* SBAISpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAISpeechViewController.h; sourceTree = "<group>"; };
+		6D382D5B29EE494F00F5DCCD /* SBAISpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAISpeechViewController.m; sourceTree = "<group>"; };
+		6D382D5C29EE494F00F5DCCD /* SBAISpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBAISpeechViewController.xib; sourceTree = "<group>"; };
 		6D83F4712519A1DF000311CE /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		6D85DF6B25CA43A400B2DF81 /* Tools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tools.entitlements; sourceTree = "<group>"; };
@@ -210,6 +220,11 @@
 		6DD9752024EA6E5E0001BC45 /* SBTools+HTML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+HTML.h"; sourceTree = "<group>"; };
 		6DD9752124EA6E5E0001BC45 /* SBTools+HTML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+HTML.m"; sourceTree = "<group>"; };
 		6DD9754024ED28FA0001BC45 /* SBTools_Macro_Block.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBTools_Macro_Block.h; sourceTree = "<group>"; };
+		6DF0D8A429DAAE0B00FF8A13 /* SBPhotoRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBPhotoRevealViewController.h; sourceTree = "<group>"; };
+		6DF0D8A529DAAE0B00FF8A13 /* PhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoView.h; sourceTree = "<group>"; };
+		6DF0D8A729DAAE0B00FF8A13 /* SBPhotoRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBPhotoRevealViewController.m; sourceTree = "<group>"; };
+		6DF0D8A829DAAE0B00FF8A13 /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
+		6DF0D8AC29DAD8D400FF8A13 /* SBToolsPch.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBToolsPch.pch; sourceTree = "<group>"; };
 		6DF494B825905113009B57C3 /* SBTools+NSString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+NSString.h"; sourceTree = "<group>"; };
 		6DF494B925905113009B57C3 /* SBTools+NSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+NSString.m"; sourceTree = "<group>"; };
 		E527F26F939A6E151E363350 /* Pods-Tools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tools.debug.xcconfig"; path = "Target Support Files/Pods-Tools/Pods-Tools.debug.xcconfig"; sourceTree = "<group>"; };
@@ -236,15 +251,29 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		6D382D5629EE46B200F5DCCD /* SBSpeechAudio */ = {
+			isa = PBXGroup;
+			children = (
+				6D382D5A29EE494F00F5DCCD /* SBAISpeechViewController.h */,
+				6D382D5B29EE494F00F5DCCD /* SBAISpeechViewController.m */,
+				6D382D5C29EE494F00F5DCCD /* SBAISpeechViewController.xib */,
+				6D382D5729EE46D400F5DCCD /* SBSpeechAudio.h */,
+				6D382D5829EE46D400F5DCCD /* SBSpeechAudio.m */,
+			);
+			path = SBSpeechAudio;
+			sourceTree = "<group>";
+		};
 		6D83F4FB251DA16E000311CE /* SBToolLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				6DF0D8A229DAAE0B00FF8A13 /* SBPhotoReveal */,
 				6DD3B75129D5860D009DF3C7 /* SBSignature */,
 				6DD3B74A29D585EB009DF3C7 /* SBNumberScroller */,
 				6DD3B71429D57933009DF3C7 /* SBAddressBook */,
 				6DD3B70D29D57933009DF3C7 /* SBAssetExportSession */,
 				6DD3B6FC29D57933009DF3C7 /* SBCalendar */,
 				6DD3B6F929D57933009DF3C7 /* SBCrashException */,
+				6D382D5629EE46B200F5DCCD /* SBSpeechAudio */,
 			);
 			path = SBToolLibrary;
 			sourceTree = "<group>";
@@ -444,6 +473,7 @@
 				6DBB5F8024DA9C2B00596489 /* LaunchScreen.storyboard */,
 				6DBB5F8324DA9C2B00596489 /* Info.plist */,
 				6DBB5F8424DA9C2B00596489 /* main.m */,
+				6DF0D8AC29DAD8D400FF8A13 /* SBToolsPch.pch */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -632,10 +662,10 @@
 		6DD3B74A29D585EB009DF3C7 /* SBNumberScroller */ = {
 			isa = PBXGroup;
 			children = (
+				6DD3B74E29D585EB009DF3C7 /* SBNumberScroller.h */,
 				6DD3B74B29D585EB009DF3C7 /* SBNumberScroller.m */,
 				6DD3B74C29D585EB009DF3C7 /* SBNumberScrollerViewController.h */,
 				6DD3B74D29D585EB009DF3C7 /* SBNumberScrollerViewController.m */,
-				6DD3B74E29D585EB009DF3C7 /* SBNumberScroller.h */,
 			);
 			path = SBNumberScroller;
 			sourceTree = "<group>";
@@ -643,9 +673,9 @@
 		6DD3B75129D5860D009DF3C7 /* SBSignature */ = {
 			isa = PBXGroup;
 			children = (
+				6DD3B75D29D5860D009DF3C7 /* UBSignatureDrawingViewController.h */,
 				6DD3B75229D5860D009DF3C7 /* UBSignatureDrawingViewController.m */,
 				6DD3B75329D5860D009DF3C7 /* Internal */,
-				6DD3B75D29D5860D009DF3C7 /* UBSignatureDrawingViewController.h */,
 			);
 			path = SBSignature;
 			sourceTree = "<group>";
@@ -653,17 +683,28 @@
 		6DD3B75329D5860D009DF3C7 /* Internal */ = {
 			isa = PBXGroup;
 			children = (
-				6DD3B75429D5860D009DF3C7 /* UIBezierPath+UBWeightedPoint.h */,
 				6DD3B75529D5860D009DF3C7 /* UBCGPointHelpers.h */,
+				6DD3B75C29D5860D009DF3C7 /* UBSignatureBezierProvider.h */,
 				6DD3B75629D5860D009DF3C7 /* UBSignatureBezierProvider.m */,
 				6DD3B75729D5860D009DF3C7 /* UBSignatureDrawingModel.h */,
-				6DD3B75829D5860D009DF3C7 /* UBSignatureDrawingModelAsync.m */,
-				6DD3B75929D5860D009DF3C7 /* UIBezierPath+UBWeightedPoint.m */,
-				6DD3B75A29D5860D009DF3C7 /* UBSignatureDrawingModelAsync.h */,
 				6DD3B75B29D5860D009DF3C7 /* UBSignatureDrawingModel.m */,
-				6DD3B75C29D5860D009DF3C7 /* UBSignatureBezierProvider.h */,
+				6DD3B75A29D5860D009DF3C7 /* UBSignatureDrawingModelAsync.h */,
+				6DD3B75829D5860D009DF3C7 /* UBSignatureDrawingModelAsync.m */,
+				6DD3B75429D5860D009DF3C7 /* UIBezierPath+UBWeightedPoint.h */,
+				6DD3B75929D5860D009DF3C7 /* UIBezierPath+UBWeightedPoint.m */,
 			);
 			path = Internal;
+			sourceTree = "<group>";
+		};
+		6DF0D8A229DAAE0B00FF8A13 /* SBPhotoReveal */ = {
+			isa = PBXGroup;
+			children = (
+				6DF0D8A529DAAE0B00FF8A13 /* PhotoView.h */,
+				6DF0D8A829DAAE0B00FF8A13 /* PhotoView.m */,
+				6DF0D8A429DAAE0B00FF8A13 /* SBPhotoRevealViewController.h */,
+				6DF0D8A729DAAE0B00FF8A13 /* SBPhotoRevealViewController.m */,
+			);
+			path = SBPhotoReveal;
 			sourceTree = "<group>";
 		};
 		FA8BBB8474F7EF26836F7426 /* Frameworks */ = {
@@ -737,6 +778,7 @@
 				6DBB5F8224DA9C2B00596489 /* LaunchScreen.storyboard in Resources */,
 				6DBB5F7F24DA9C2B00596489 /* Assets.xcassets in Resources */,
 				6DD3B6EA29D56388009DF3C7 /* MainCustomCell.xib in Resources */,
+				6D382D5E29EE494F00F5DCCD /* SBAISpeechViewController.xib in Resources */,
 				6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */,
 				6DD3B72129D57933009DF3C7 /* ERCalendarPickerItemCell.xib in Resources */,
 				6DBB5F7D24DA9C2800596489 /* Main.storyboard in Resources */,
@@ -805,6 +847,7 @@
 				6DD3B6D229D2D191009DF3C7 /* NSDictionary+SBCategory.m in Sources */,
 				6DD3B76229D5860D009DF3C7 /* UBSignatureDrawingModel.m in Sources */,
 				6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */,
+				6DF0D8AA29DAAE0B00FF8A13 /* SBPhotoRevealViewController.m in Sources */,
 				6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */,
 				6DD3B72629D57933009DF3C7 /* SBAssetExportCompression.m in Sources */,
 				6DD3B72729D57933009DF3C7 /* SBAssetExportSession.m in Sources */,
@@ -821,6 +864,7 @@
 				6DD3B71E29D57933009DF3C7 /* ERCalendarPickerViewController.m in Sources */,
 				6DD3B6EE29D56784009DF3C7 /* MainCustomModel.m in Sources */,
 				6DD3B6D529D2DB02009DF3C7 /* NSFileManager+SBCategory.m in Sources */,
+				6D382D5929EE46D400F5DCCD /* SBSpeechAudio.m in Sources */,
 				6DBB5F8524DA9C2B00596489 /* main.m in Sources */,
 				6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */,
 				6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */,
@@ -835,6 +879,7 @@
 				6DD3B75F29D5860D009DF3C7 /* UBSignatureBezierProvider.m in Sources */,
 				6DD3B74F29D585EB009DF3C7 /* SBNumberScroller.m in Sources */,
 				6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */,
+				6D382D5D29EE494F00F5DCCD /* SBAISpeechViewController.m in Sources */,
 				6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */,
 				6DD3B6E529D5328D009DF3C7 /* MainViewController.m in Sources */,
 				6DD3B74529D5796C009DF3C7 /* RITLContactManager.m in Sources */,
@@ -842,6 +887,7 @@
 				6DD3B71C29D57933009DF3C7 /* UncaughtExceptionHandler.m in Sources */,
 				6DB165AE25072FEA00D1E2AB /* SBTools+UIImage.m in Sources */,
 				6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */,
+				6DF0D8AB29DAAE0B00FF8A13 /* PhotoView.m in Sources */,
 				6DD3B73E29D5796C009DF3C7 /* RITLContactObject.m in Sources */,
 				6DD3B74229D5796C009DF3C7 /* RITLContactCatcheManager.m in Sources */,
 				6DD3B72829D57933009DF3C7 /* UIAlertController+RITLContactFile.m in Sources */,
@@ -994,6 +1040,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZARRM2TL6W;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Tools/SBToolsPch.pch";
 				INFOPLIST_FILE = Tools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1016,6 +1064,8 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZARRM2TL6W;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Tools/SBToolsPch.pch";
 				INFOPLIST_FILE = Tools/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,8 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "SBToolsHeader.h"
-#import "Masonry.h"
 
 #import "MainCustomCell.h"
 
@@ -17,6 +15,8 @@
 #import "UBSignatureDrawingViewController.h"
 #import "SBNumberScrollerViewController.h"
 #import "SBAssetExportViewController.h"
+#import "SBPhotoRevealViewController.h"
+#import "SBAISpeechViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -40,6 +40,7 @@
 
 #pragma mark ----------初始化页面配置
 -(void)setupconfig{
+    self.navigationItem.title = @"SBTool示例";
     
     self.view.backgroundColor = SBCOLORHEX(0xf8f8f8, 1);
 
@@ -68,6 +69,9 @@
     
     [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBAssetExportSession" ExampleDesc:@"视频压缩1.采用 AVAssetReader和AVAssetWriter 2.采用 AVAssetExportSession；"]];
 
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBPhotoReveal" ExampleDesc:@"大图查看器，支持放大、双击、捏合手势、保存到相册，依赖SDWebImage图片下载，支持UIImage与NSString格式数据；"]];
+    
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBSpeechAudio" ExampleDesc:@"实施语音转文字、文字播报朗读（系统声音）；"]];
     
     
     [self.tableview reloadData];
@@ -94,8 +98,14 @@
     }else if ([model.exampleTitle isEqualToString:@"SBAssetExportSession"]){
         SBAssetExportViewController *vc = [[SBAssetExportViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBPhotoReveal"]){
+        SBPhotoRevealViewController *vc = [[SBPhotoRevealViewController alloc] init];
+        vc.imgArr = [NSMutableArray arrayWithArray:@[@"https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ef73be60b27d4f8895cc5e3136b2825c~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp",@"https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/23e7429b15574087918f91a4fa8485ad~tplv-k3u1fbpfcp-zoom-in-crop-mark:3024:0:0:0.awebp"]];
+        [self presentViewController:vc animated:YES completion:nil];
+    }else if ([model.exampleTitle isEqualToString:@"SBSpeechAudio"]){
+        SBAISpeechViewController *vc = [[SBAISpeechViewController alloc] initWithNibName:NSStringFromClass([SBAISpeechViewController class]) bundle:[NSBundle mainBundle]];
+        [self.navigationController pushViewController:vc animated:YES];
     }
-    
 }
 
 #pragma mark ----------TableviewDelegate

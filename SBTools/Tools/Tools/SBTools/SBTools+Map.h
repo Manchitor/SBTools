@@ -26,11 +26,75 @@ typedef NS_ENUM(NSInteger, SBMapApplicationType) {
 
 @interface SBTools (Map)
 
-/// 百度坐标转高德坐标
-+ (CLLocationCoordinate2D)GCJ02FromBD09:(CLLocationCoordinate2D)coor;
- 
-// 高德坐标转百度坐标
-+ (CLLocationCoordinate2D)BD09FromGCJ02:(CLLocationCoordinate2D)coor;
+/**
+ *    @brief    世界标准地理坐标(WGS-84) 转换成 中国国测局地理坐标（GCJ-02）<火星坐标>
+ *
+ *  ####只在中国大陆的范围的坐标有效，以外直接返回世界标准坐标
+ *
+ *    @param     location     世界标准地理坐标(WGS-84)
+ *
+ *    @return    中国国测局地理坐标（GCJ-02）<火星坐标>
+ */
++ (CLLocationCoordinate2D)sb_wgs84_to_gcj02:(CLLocationCoordinate2D)location;
+
+
+/**
+ *    @brief    世界标准地理坐标(WGS-84) 转换成 百度地理坐标（BD-09)
+ *
+ *    @param     location     世界标准地理坐标(WGS-84)
+ *
+ *    @return    百度地理坐标（BD-09)
+ */
++ (CLLocationCoordinate2D)sb_wgs84_to_bd09:(CLLocationCoordinate2D)location;
+
+
+
+/**
+ *    @brief    中国国测局地理坐标（GCJ-02） 转换成 世界标准地理坐标（WGS-84）
+ *
+ *  ####此接口有1－2米左右的误差，需要精确定位情景慎用
+ *
+ *    @param     location     中国国测局地理坐标（GCJ-02）
+ *
+ *    @return    世界标准地理坐标（WGS-84）
+ */
++ (CLLocationCoordinate2D)sb_gcj02_to_wgs84:(CLLocationCoordinate2D)location;
+
+
+
+
+/**
+ *    @brief    中国国测局地理坐标（GCJ-02）<火星坐标> 转换成 百度地理坐标（BD-09)
+ *
+ *    @param     location     中国国测局地理坐标（GCJ-02）<火星坐标>
+ *
+ *    @return    百度地理坐标（BD-09)
+ */
++ (CLLocationCoordinate2D)sb_gcj02_to_bd09:(CLLocationCoordinate2D)location;
+
+
+/**
+ *    @brief    百度地理坐标（BD-09) 转换成 中国国测局地理坐标（GCJ-02）<火星坐标>
+ *
+ *    @param     location     百度地理坐标（BD-09)
+ *
+ *    @return    中国国测局地理坐标（GCJ-02）<火星坐标>
+ */
++ (CLLocationCoordinate2D)sb_bd09_to_gcj02:(CLLocationCoordinate2D)location;
+
+
+/**
+ *    @brief    百度地理坐标（BD-09) 转换成 世界标准地理坐标（WGS-84）
+ *
+ *  ####此接口有1－2米左右的误差，需要精确定位情景慎用
+ *
+ *    @param     location     百度地理坐标（BD-09)
+ *
+ *    @return    世界标准地理坐标（WGS-84）
+ */
++ (CLLocationCoordinate2D)sb_bd09_to_wgs84:(CLLocationCoordinate2D)location;
+
+
 
 ///地图应用跳转传入目标经纬度
 + (void) openUrlApplication:(SBMapApplicationType) type locationCoordinate2D:(CLLocationCoordinate2D)locationCoordinate name:(NSString *)name;

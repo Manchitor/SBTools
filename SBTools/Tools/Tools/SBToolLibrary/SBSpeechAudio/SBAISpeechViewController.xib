@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SBAISpeechViewController">
+            <connections>
+                <outlet property="textView" destination="5gI-4u-Gjd" id="9JA-C7-xBh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5gI-4u-Gjd">
+                    <rect key="frame" x="20" y="94" width="374" height="200"/>
+                    <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="1vb-ZS-v39"/>
+                    </constraints>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oC4-Qk-q3s">
+                    <rect key="frame" x="57" y="324" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="rLy-0p-sSp"/>
+                        <constraint firstAttribute="width" constant="100" id="ssl-rQ-VCI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="开始录音">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="startRecord:" destination="-1" eventType="touchUpInside" id="2hO-cN-Yxa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dPl-Fl-hyU">
+                    <rect key="frame" x="257" y="324" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="H3k-oD-KPa"/>
+                        <constraint firstAttribute="width" constant="100" id="obs-EV-SQW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="停止录音">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="stopRecord:" destination="-1" eventType="touchUpInside" id="pMo-a6-te6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tdq-c4-bo1">
+                    <rect key="frame" x="157" y="414" width="100" height="40"/>
+                    <color key="backgroundColor" red="0.0" green="0.035294117649999998" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="MpQ-iN-AwI"/>
+                        <constraint firstAttribute="width" constant="100" id="nEK-3A-XkN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="朗读文字">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="readText:" destination="-1" eventType="touchUpInside" id="ldb-cE-Sub"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="oC4-Qk-q3s" firstAttribute="centerX" secondItem="5gI-4u-Gjd" secondAttribute="centerX" constant="-100" id="HIf-Uk-hjN"/>
+                <constraint firstItem="oC4-Qk-q3s" firstAttribute="top" secondItem="5gI-4u-Gjd" secondAttribute="bottom" constant="30" id="UuC-Ld-PtB"/>
+                <constraint firstItem="dPl-Fl-hyU" firstAttribute="centerX" secondItem="5gI-4u-Gjd" secondAttribute="centerX" constant="100" id="YMA-q9-QNm"/>
+                <constraint firstItem="tdq-c4-bo1" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="fHp-Xc-0hy"/>
+                <constraint firstItem="5gI-4u-Gjd" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="gbh-0t-aq5"/>
+                <constraint firstItem="tdq-c4-bo1" firstAttribute="top" secondItem="dPl-Fl-hyU" secondAttribute="bottom" constant="50" id="hUp-cj-U6g"/>
+                <constraint firstItem="5gI-4u-Gjd" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="50" id="jh2-eu-P2W"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="5gI-4u-Gjd" secondAttribute="trailing" constant="20" id="vKE-Qv-jeA"/>
+                <constraint firstItem="dPl-Fl-hyU" firstAttribute="top" secondItem="5gI-4u-Gjd" secondAttribute="bottom" constant="30" id="w3H-Po-39t"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
