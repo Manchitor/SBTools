@@ -11,7 +11,17 @@
 		6D382D5929EE46D400F5DCCD /* SBSpeechAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D382D5829EE46D400F5DCCD /* SBSpeechAudio.m */; };
 		6D382D5D29EE494F00F5DCCD /* SBAISpeechViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D382D5B29EE494F00F5DCCD /* SBAISpeechViewController.m */; };
 		6D382D5E29EE494F00F5DCCD /* SBAISpeechViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D382D5C29EE494F00F5DCCD /* SBAISpeechViewController.xib */; };
+		6D382D6029EFCB1B00F5DCCD /* 1681888102373.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6D382D5F29EFCB1B00F5DCCD /* 1681888102373.jpg */; };
+		6D38D38F29EFD15600DD5742 /* SBVisionText.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D38D38E29EFD15600DD5742 /* SBVisionText.m */; };
+		6D3A3F8129EFE8A400AC8EA4 /* SBVisionTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3F7F29EFE8A400AC8EA4 /* SBVisionTextViewController.m */; };
+		6D3A3F8229EFE8A400AC8EA4 /* SBVisionTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A3F8029EFE8A400AC8EA4 /* SBVisionTextViewController.xib */; };
+		6D3A3F8929F12F5000AC8EA4 /* SBTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3F8829F12F5000AC8EA4 /* SBTools.swift */; };
+		6D3A3F8E29F1334700AC8EA4 /* SBChartsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3F8C29F1334700AC8EA4 /* SBChartsMainViewController.m */; };
+		6D3A3F8F29F1334700AC8EA4 /* SBChartsMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D3A3F8D29F1334700AC8EA4 /* SBChartsMainViewController.xib */; };
+		6D3A3FA429F2248700AC8EA4 /* SBLineChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3FA329F2248700AC8EA4 /* SBLineChartViewController.m */; };
+		6D3A3FA729F23C4200AC8EA4 /* SBBarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A3FA629F23C4200AC8EA4 /* SBBarChartViewController.m */; };
 		6D83F4732519A1DF000311CE /* UIView+CornerRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */; };
+		6D9B1E022A15CABB0038CAAE /* SBTools+AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9B1E012A15CABA0038CAAE /* SBTools+AES.m */; };
 		6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */; };
 		6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACA825E34D35000A1F2E /* SBTools+App.m */; };
 		6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DA6ACAC25E35C0D000A1F2E /* SBTools+Date.m */; };
@@ -30,6 +40,16 @@
 		6DBB5F8524DA9C2B00596489 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBB5F8424DA9C2B00596489 /* main.m */; };
 		6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */; };
 		6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */; };
+		6DC655D029F4C4BB00D41601 /* SBPieChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC655CF29F4C4BB00D41601 /* SBPieChartViewController.m */; };
+		6DC655D329F4C89500D41601 /* SBBubbleChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC655D229F4C89500D41601 /* SBBubbleChartViewController.m */; };
+		6DC655D629F4CE5200D41601 /* SBRadarChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC655D529F4CE5200D41601 /* SBRadarChartViewController.m */; };
+		6DC655E329F6767400D41601 /* SBBubbleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC655E229F6767400D41601 /* SBBubbleImageView.m */; };
+		6DC655E629F68AF700D41601 /* SBBubbleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC655E429F68AF700D41601 /* SBBubbleViewController.m */; };
+		6DC655E929F76C6A00D41601 /* SBBubleMoveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC655E829F76C6A00D41601 /* SBBubleMoveViewController.m */; };
+		6DD397712A0A3A1B00692ADF /* SBRadarCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD397702A0A3A1A00692ADF /* SBRadarCharts.m */; };
+		6DD397742A0A3EAF00692ADF /* SBRadarChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD397732A0A3EAF00692ADF /* SBRadarChartsViewController.m */; };
+		6DD397832A0CCEFD00692ADF /* SBRadarChartsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD397822A0CCEFD00692ADF /* SBRadarChartsView.m */; };
+		6DD397892A0CD0CE00692ADF /* SBRadarCustomChartsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD397882A0CD0CE00692ADF /* SBRadarCustomChartsViewController.m */; };
 		6DD3B6C429CAF922009DF3C7 /* SBTools+Map.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6C329CAF922009DF3C7 /* SBTools+Map.m */; };
 		6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6C929CC28B0009DF3C7 /* SBEdgeLabel.m */; };
 		6DD3B6CD29CC4659009DF3C7 /* UITextField+Clear.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD3B6CB29CC4659009DF3C7 /* UITextField+Clear.m */; };
@@ -88,9 +108,26 @@
 		6D382D5A29EE494F00F5DCCD /* SBAISpeechViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBAISpeechViewController.h; sourceTree = "<group>"; };
 		6D382D5B29EE494F00F5DCCD /* SBAISpeechViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBAISpeechViewController.m; sourceTree = "<group>"; };
 		6D382D5C29EE494F00F5DCCD /* SBAISpeechViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBAISpeechViewController.xib; sourceTree = "<group>"; };
+		6D382D5F29EFCB1B00F5DCCD /* 1681888102373.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1681888102373.jpg; sourceTree = "<group>"; };
+		6D38D38D29EFD15600DD5742 /* SBVisionText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBVisionText.h; sourceTree = "<group>"; };
+		6D38D38E29EFD15600DD5742 /* SBVisionText.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBVisionText.m; sourceTree = "<group>"; };
+		6D3A3F7E29EFE8A400AC8EA4 /* SBVisionTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBVisionTextViewController.h; sourceTree = "<group>"; };
+		6D3A3F7F29EFE8A400AC8EA4 /* SBVisionTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBVisionTextViewController.m; sourceTree = "<group>"; };
+		6D3A3F8029EFE8A400AC8EA4 /* SBVisionTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBVisionTextViewController.xib; sourceTree = "<group>"; };
+		6D3A3F8729F12F5000AC8EA4 /* Tools-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tools-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D3A3F8829F12F5000AC8EA4 /* SBTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SBTools.swift; sourceTree = "<group>"; };
+		6D3A3F8B29F1334700AC8EA4 /* SBChartsMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBChartsMainViewController.h; sourceTree = "<group>"; };
+		6D3A3F8C29F1334700AC8EA4 /* SBChartsMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBChartsMainViewController.m; sourceTree = "<group>"; };
+		6D3A3F8D29F1334700AC8EA4 /* SBChartsMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SBChartsMainViewController.xib; sourceTree = "<group>"; };
+		6D3A3FA229F2248700AC8EA4 /* SBLineChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBLineChartViewController.h; sourceTree = "<group>"; };
+		6D3A3FA329F2248700AC8EA4 /* SBLineChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBLineChartViewController.m; sourceTree = "<group>"; };
+		6D3A3FA529F23C4200AC8EA4 /* SBBarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBarChartViewController.h; sourceTree = "<group>"; };
+		6D3A3FA629F23C4200AC8EA4 /* SBBarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBarChartViewController.m; sourceTree = "<group>"; };
 		6D83F4712519A1DF000311CE /* UIView+CornerRadius.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+CornerRadius.h"; sourceTree = "<group>"; };
 		6D83F4722519A1DF000311CE /* UIView+CornerRadius.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+CornerRadius.m"; sourceTree = "<group>"; };
 		6D85DF6B25CA43A400B2DF81 /* Tools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tools.entitlements; sourceTree = "<group>"; };
+		6D9B1E002A15CABA0038CAAE /* SBTools+AES.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+AES.h"; sourceTree = "<group>"; };
+		6D9B1E012A15CABA0038CAAE /* SBTools+AES.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+AES.m"; sourceTree = "<group>"; };
 		6DA5368625AED187008BF1A9 /* UILabel+TimerColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+TimerColor.h"; sourceTree = "<group>"; };
 		6DA5368725AED187008BF1A9 /* UILabel+TimerColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TimerColor.m"; sourceTree = "<group>"; };
 		6DA6ACA725E34D35000A1F2E /* SBTools+App.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+App.h"; sourceTree = "<group>"; };
@@ -131,6 +168,26 @@
 		6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBDataEmpty.xib; sourceTree = "<group>"; };
 		6DC4ECB62591C5F10083676C /* UITableView+SBDataEmpty.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+SBDataEmpty.h"; sourceTree = "<group>"; };
 		6DC4ECB72591C5F10083676C /* UITableView+SBDataEmpty.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SBDataEmpty.m"; sourceTree = "<group>"; };
+		6DC655CE29F4C4BB00D41601 /* SBPieChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBPieChartViewController.h; sourceTree = "<group>"; };
+		6DC655CF29F4C4BB00D41601 /* SBPieChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBPieChartViewController.m; sourceTree = "<group>"; };
+		6DC655D129F4C89500D41601 /* SBBubbleChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBubbleChartViewController.h; sourceTree = "<group>"; };
+		6DC655D229F4C89500D41601 /* SBBubbleChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBubbleChartViewController.m; sourceTree = "<group>"; };
+		6DC655D429F4CE5200D41601 /* SBRadarChartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRadarChartViewController.h; sourceTree = "<group>"; };
+		6DC655D529F4CE5200D41601 /* SBRadarChartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRadarChartViewController.m; sourceTree = "<group>"; };
+		6DC655E129F6767400D41601 /* SBBubbleImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBBubbleImageView.h; sourceTree = "<group>"; };
+		6DC655E229F6767400D41601 /* SBBubbleImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBBubbleImageView.m; sourceTree = "<group>"; };
+		6DC655E429F68AF700D41601 /* SBBubbleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBubbleViewController.m; sourceTree = "<group>"; };
+		6DC655E529F68AF700D41601 /* SBBubbleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBubbleViewController.h; sourceTree = "<group>"; };
+		6DC655E729F76C6A00D41601 /* SBBubleMoveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBBubleMoveViewController.h; sourceTree = "<group>"; };
+		6DC655E829F76C6A00D41601 /* SBBubleMoveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBBubleMoveViewController.m; sourceTree = "<group>"; };
+		6DD3976F2A0A3A1A00692ADF /* SBRadarCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRadarCharts.h; sourceTree = "<group>"; };
+		6DD397702A0A3A1A00692ADF /* SBRadarCharts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRadarCharts.m; sourceTree = "<group>"; };
+		6DD397722A0A3EAF00692ADF /* SBRadarChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRadarChartsViewController.h; sourceTree = "<group>"; };
+		6DD397732A0A3EAF00692ADF /* SBRadarChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRadarChartsViewController.m; sourceTree = "<group>"; };
+		6DD397812A0CCEFD00692ADF /* SBRadarChartsView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRadarChartsView.h; sourceTree = "<group>"; };
+		6DD397822A0CCEFD00692ADF /* SBRadarChartsView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRadarChartsView.m; sourceTree = "<group>"; };
+		6DD397872A0CD0CE00692ADF /* SBRadarCustomChartsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBRadarCustomChartsViewController.h; sourceTree = "<group>"; };
+		6DD397882A0CD0CE00692ADF /* SBRadarCustomChartsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBRadarCustomChartsViewController.m; sourceTree = "<group>"; };
 		6DD3B6C229CAF922009DF3C7 /* SBTools+Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SBTools+Map.h"; sourceTree = "<group>"; };
 		6DD3B6C329CAF922009DF3C7 /* SBTools+Map.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "SBTools+Map.m"; sourceTree = "<group>"; };
 		6DD3B6C829CC28B0009DF3C7 /* SBEdgeLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBEdgeLabel.h; sourceTree = "<group>"; };
@@ -263,9 +320,51 @@
 			path = SBSpeechAudio;
 			sourceTree = "<group>";
 		};
+		6D38D38C29EFD13200DD5742 /* SBVisonText */ = {
+			isa = PBXGroup;
+			children = (
+				6D38D38D29EFD15600DD5742 /* SBVisionText.h */,
+				6D38D38E29EFD15600DD5742 /* SBVisionText.m */,
+				6D3A3F7E29EFE8A400AC8EA4 /* SBVisionTextViewController.h */,
+				6D3A3F7F29EFE8A400AC8EA4 /* SBVisionTextViewController.m */,
+				6D3A3F8029EFE8A400AC8EA4 /* SBVisionTextViewController.xib */,
+			);
+			path = SBVisonText;
+			sourceTree = "<group>";
+		};
+		6D3A3F8A29F1330800AC8EA4 /* SBCharts */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A3F8B29F1334700AC8EA4 /* SBChartsMainViewController.h */,
+				6D3A3F8C29F1334700AC8EA4 /* SBChartsMainViewController.m */,
+				6D3A3F8D29F1334700AC8EA4 /* SBChartsMainViewController.xib */,
+				6D3A3FA129F143D100AC8EA4 /* SBExampleController */,
+			);
+			path = SBCharts;
+			sourceTree = "<group>";
+		};
+		6D3A3FA129F143D100AC8EA4 /* SBExampleController */ = {
+			isa = PBXGroup;
+			children = (
+				6D3A3FA229F2248700AC8EA4 /* SBLineChartViewController.h */,
+				6D3A3FA329F2248700AC8EA4 /* SBLineChartViewController.m */,
+				6D3A3FA529F23C4200AC8EA4 /* SBBarChartViewController.h */,
+				6D3A3FA629F23C4200AC8EA4 /* SBBarChartViewController.m */,
+				6DC655CE29F4C4BB00D41601 /* SBPieChartViewController.h */,
+				6DC655CF29F4C4BB00D41601 /* SBPieChartViewController.m */,
+				6DC655D129F4C89500D41601 /* SBBubbleChartViewController.h */,
+				6DC655D229F4C89500D41601 /* SBBubbleChartViewController.m */,
+				6DC655D429F4CE5200D41601 /* SBRadarChartViewController.h */,
+				6DC655D529F4CE5200D41601 /* SBRadarChartViewController.m */,
+			);
+			path = SBExampleController;
+			sourceTree = "<group>";
+		};
 		6D83F4FB251DA16E000311CE /* SBToolLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				6DD397752A0A4F6100692ADF /* SBRadarChart */,
+				6DD3976E2A0A305D00692ADF /* SBRadarCharts */,
 				6DF0D8A229DAAE0B00FF8A13 /* SBPhotoReveal */,
 				6DD3B75129D5860D009DF3C7 /* SBSignature */,
 				6DD3B74A29D585EB009DF3C7 /* SBNumberScroller */,
@@ -274,6 +373,9 @@
 				6DD3B6FC29D57933009DF3C7 /* SBCalendar */,
 				6DD3B6F929D57933009DF3C7 /* SBCrashException */,
 				6D382D5629EE46B200F5DCCD /* SBSpeechAudio */,
+				6D38D38C29EFD13200DD5742 /* SBVisonText */,
+				6D3A3F8A29F1330800AC8EA4 /* SBCharts */,
+				6DC655E029F6763000D41601 /* SBBubbleAnimation */,
 			);
 			path = SBToolLibrary;
 			sourceTree = "<group>";
@@ -338,6 +440,8 @@
 				6DD9751724E6987D0001BC45 /* SBTools+MD5.m */,
 				6DD9751D24EA5C380001BC45 /* SBTools+Base64.h */,
 				6DD9751E24EA5C380001BC45 /* SBTools+Base64.m */,
+				6D9B1E002A15CABA0038CAAE /* SBTools+AES.h */,
+				6D9B1E012A15CABA0038CAAE /* SBTools+AES.m */,
 				6DD9751A24E6990C0001BC45 /* SBTools+Device.h */,
 				6DD9751B24E6990C0001BC45 /* SBTools+Device.m */,
 				6DD9752024EA6E5E0001BC45 /* SBTools+HTML.h */,
@@ -461,6 +565,7 @@
 		6DBB5F7124DA9C2800596489 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				6D382D5F29EFCB1B00F5DCCD /* 1681888102373.jpg */,
 				6D85DF6B25CA43A400B2DF81 /* Tools.entitlements */,
 				6DBB5F8B24DBEF3D00596489 /* Tools */,
 				6DD3B6DF29D531E3009DF3C7 /* Example */,
@@ -474,6 +579,8 @@
 				6DBB5F8324DA9C2B00596489 /* Info.plist */,
 				6DBB5F8424DA9C2B00596489 /* main.m */,
 				6DF0D8AC29DAD8D400FF8A13 /* SBToolsPch.pch */,
+				6D3A3F8829F12F5000AC8EA4 /* SBTools.swift */,
+				6D3A3F8729F12F5000AC8EA4 /* Tools-Bridging-Header.h */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -499,6 +606,41 @@
 				6DC4ECB22591C59E0083676C /* SBDataEmpty.xib */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		6DC655E029F6763000D41601 /* SBBubbleAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				6DC655E729F76C6A00D41601 /* SBBubleMoveViewController.h */,
+				6DC655E829F76C6A00D41601 /* SBBubleMoveViewController.m */,
+				6DC655E529F68AF700D41601 /* SBBubbleViewController.h */,
+				6DC655E429F68AF700D41601 /* SBBubbleViewController.m */,
+				6DC655E129F6767400D41601 /* SBBubbleImageView.h */,
+				6DC655E229F6767400D41601 /* SBBubbleImageView.m */,
+			);
+			path = SBBubbleAnimation;
+			sourceTree = "<group>";
+		};
+		6DD3976E2A0A305D00692ADF /* SBRadarCharts */ = {
+			isa = PBXGroup;
+			children = (
+				6DD3976F2A0A3A1A00692ADF /* SBRadarCharts.h */,
+				6DD397702A0A3A1A00692ADF /* SBRadarCharts.m */,
+				6DD397722A0A3EAF00692ADF /* SBRadarChartsViewController.h */,
+				6DD397732A0A3EAF00692ADF /* SBRadarChartsViewController.m */,
+			);
+			path = SBRadarCharts;
+			sourceTree = "<group>";
+		};
+		6DD397752A0A4F6100692ADF /* SBRadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				6DD397812A0CCEFD00692ADF /* SBRadarChartsView.h */,
+				6DD397822A0CCEFD00692ADF /* SBRadarChartsView.m */,
+				6DD397872A0CD0CE00692ADF /* SBRadarCustomChartsViewController.h */,
+				6DD397882A0CD0CE00692ADF /* SBRadarCustomChartsViewController.m */,
+			);
+			path = SBRadarChart;
 			sourceTree = "<group>";
 		};
 		6DD3B6DF29D531E3009DF3C7 /* Example */ = {
@@ -748,6 +890,7 @@
 				TargetAttributes = {
 					6DBB5F6E24DA9C2800596489 = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1320;
 					};
 				};
 			};
@@ -780,8 +923,11 @@
 				6DD3B6EA29D56388009DF3C7 /* MainCustomCell.xib in Resources */,
 				6D382D5E29EE494F00F5DCCD /* SBAISpeechViewController.xib in Resources */,
 				6DC4ECB32591C59E0083676C /* SBDataEmpty.xib in Resources */,
+				6D382D6029EFCB1B00F5DCCD /* 1681888102373.jpg in Resources */,
 				6DD3B72129D57933009DF3C7 /* ERCalendarPickerItemCell.xib in Resources */,
 				6DBB5F7D24DA9C2800596489 /* Main.storyboard in Resources */,
+				6D3A3F8F29F1334700AC8EA4 /* SBChartsMainViewController.xib in Resources */,
+				6D3A3F8229EFE8A400AC8EA4 /* SBVisionTextViewController.xib in Resources */,
 				6DD3B71D29D57933009DF3C7 /* ERCalendarPickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -839,6 +985,7 @@
 				6DA5368825AED188008BF1A9 /* UILabel+TimerColor.m in Sources */,
 				6DD3B76129D5860D009DF3C7 /* UIBezierPath+UBWeightedPoint.m in Sources */,
 				6DD3B72529D57933009DF3C7 /* SBAssetExportViewController.m in Sources */,
+				6D3A3FA429F2248700AC8EA4 /* SBLineChartViewController.m in Sources */,
 				6DBB5F7A24DA9C2800596489 /* ViewController.m in Sources */,
 				6DD3B74429D5796C009DF3C7 /* CNMutableContact+RITLContactFile.m in Sources */,
 				6DD3B75E29D5860D009DF3C7 /* UBSignatureDrawingViewController.m in Sources */,
@@ -847,8 +994,10 @@
 				6DD3B6D229D2D191009DF3C7 /* NSDictionary+SBCategory.m in Sources */,
 				6DD3B76229D5860D009DF3C7 /* UBSignatureDrawingModel.m in Sources */,
 				6DA6ACA925E34D35000A1F2E /* SBTools+App.m in Sources */,
+				6DD397832A0CCEFD00692ADF /* SBRadarChartsView.m in Sources */,
 				6DF0D8AA29DAAE0B00FF8A13 /* SBPhotoRevealViewController.m in Sources */,
 				6DD3B6CA29CC28B0009DF3C7 /* SBEdgeLabel.m in Sources */,
+				6D3A3F8929F12F5000AC8EA4 /* SBTools.swift in Sources */,
 				6DD3B72629D57933009DF3C7 /* SBAssetExportCompression.m in Sources */,
 				6DD3B72729D57933009DF3C7 /* SBAssetExportSession.m in Sources */,
 				6DB165B225076B4800D1E2AB /* UIImage+SBExt.m in Sources */,
@@ -856,7 +1005,10 @@
 				6DD3B74029D5796C009DF3C7 /* RITLContactObjectManager.m in Sources */,
 				6DD3B71F29D57933009DF3C7 /* ERCalendarPickerMonthModel.m in Sources */,
 				6DD3B6E929D56388009DF3C7 /* MainCustomCell.m in Sources */,
+				6DC655E329F6767400D41601 /* SBBubbleImageView.m in Sources */,
+				6DC655E629F68AF700D41601 /* SBBubbleViewController.m in Sources */,
 				6DBB5F7424DA9C2800596489 /* AppDelegate.m in Sources */,
+				6DD397712A0A3A1B00692ADF /* SBRadarCharts.m in Sources */,
 				6DD3B72229D57933009DF3C7 /* ERCalendarPickerItemCell.m in Sources */,
 				6DD3B72929D57933009DF3C7 /* SBAddressBookViewController.m in Sources */,
 				6DD3B72329D57933009DF3C7 /* ERCalendarPickerCell.m in Sources */,
@@ -866,11 +1018,13 @@
 				6DD3B6D529D2DB02009DF3C7 /* NSFileManager+SBCategory.m in Sources */,
 				6D382D5929EE46D400F5DCCD /* SBSpeechAudio.m in Sources */,
 				6DBB5F8524DA9C2B00596489 /* main.m in Sources */,
+				6DD397892A0CD0CE00692ADF /* SBRadarCustomChartsViewController.m in Sources */,
 				6DA6ACAD25E35C0D000A1F2E /* SBTools+Date.m in Sources */,
 				6DB165A925072FC900D1E2AB /* SBCustomerTextView.m in Sources */,
 				6DD3B6CD29CC4659009DF3C7 /* UITextField+Clear.m in Sources */,
 				6DB165AB25072FC900D1E2AB /* UITextField+PlaceholderColor.m in Sources */,
 				6DF494BA25905113009B57C3 /* SBTools+NSString.m in Sources */,
+				6D3A3F8129EFE8A400AC8EA4 /* SBVisionTextViewController.m in Sources */,
 				6DD3B73F29D5796C009DF3C7 /* NSString+RITLContactFile.m in Sources */,
 				6DD9751C24E6990C0001BC45 /* SBTools+Device.m in Sources */,
 				6DD9751F24EA5C380001BC45 /* SBTools+Base64.m in Sources */,
@@ -878,6 +1032,8 @@
 				6DD9751224E696460001BC45 /* SBTools.m in Sources */,
 				6DD3B75F29D5860D009DF3C7 /* UBSignatureBezierProvider.m in Sources */,
 				6DD3B74F29D585EB009DF3C7 /* SBNumberScroller.m in Sources */,
+				6D3A3FA729F23C4200AC8EA4 /* SBBarChartViewController.m in Sources */,
+				6D9B1E022A15CABB0038CAAE /* SBTools+AES.m in Sources */,
 				6DB165A725072FC900D1E2AB /* SBCustomerButton.m in Sources */,
 				6D382D5D29EE494F00F5DCCD /* SBAISpeechViewController.m in Sources */,
 				6DD9752224EA6E5E0001BC45 /* SBTools+HTML.m in Sources */,
@@ -886,14 +1042,21 @@
 				6DD3B76029D5860D009DF3C7 /* UBSignatureDrawingModelAsync.m in Sources */,
 				6DD3B71C29D57933009DF3C7 /* UncaughtExceptionHandler.m in Sources */,
 				6DB165AE25072FEA00D1E2AB /* SBTools+UIImage.m in Sources */,
+				6D3A3F8E29F1334700AC8EA4 /* SBChartsMainViewController.m in Sources */,
+				6DC655E929F76C6A00D41601 /* SBBubleMoveViewController.m in Sources */,
 				6DC4ECB82591C5F10083676C /* UITableView+SBDataEmpty.m in Sources */,
 				6DF0D8AB29DAAE0B00FF8A13 /* PhotoView.m in Sources */,
+				6D38D38F29EFD15600DD5742 /* SBVisionText.m in Sources */,
+				6DD397742A0A3EAF00692ADF /* SBRadarChartsViewController.m in Sources */,
 				6DD3B73E29D5796C009DF3C7 /* RITLContactObject.m in Sources */,
 				6DD3B74229D5796C009DF3C7 /* RITLContactCatcheManager.m in Sources */,
 				6DD3B72829D57933009DF3C7 /* UIAlertController+RITLContactFile.m in Sources */,
 				6DD3B72029D57933009DF3C7 /* ERCalendarPickerDayModel.m in Sources */,
 				6DD3B74629D5796C009DF3C7 /* RITLContactsManager.m in Sources */,
+				6DC655D329F4C89500D41601 /* SBBubbleChartViewController.m in Sources */,
 				6DD3B74129D5796C009DF3C7 /* CNContactFetchRequest+RITLContactFile.m in Sources */,
+				6DC655D629F4CE5200D41601 /* SBRadarChartViewController.m in Sources */,
+				6DC655D029F4C4BB00D41601 /* SBPieChartViewController.m in Sources */,
 				6DB165932507264600D1E2AB /* SBTools+Albums.m in Sources */,
 				6DD3B75029D585EB009DF3C7 /* SBNumberScrollerViewController.m in Sources */,
 			);
@@ -1036,6 +1199,7 @@
 			baseConfigurationReference = E527F26F939A6E151E363350 /* Pods-Tools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1051,6 +1215,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.sitech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tools/Tools-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -1060,6 +1227,7 @@
 			baseConfigurationReference = 40D7A4980C0CB7E434BE2934 /* Pods-Tools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Tools/Tools.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -1075,6 +1243,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ios.sitech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Tools/Tools-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

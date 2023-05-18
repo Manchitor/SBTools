@@ -16,6 +16,9 @@
 //MD5 加密
 #import "SBTools+MD5.h"
 
+//AES 加密
+#import "SBTools+AES.h"
+
 //Base64
 #import "SBTools+Base64.h"
 

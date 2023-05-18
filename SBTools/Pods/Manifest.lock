@@ -1,4 +1,7 @@
 PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - Masonry (1.1.0)
   - SDWebImage (5.13.2):
     - SDWebImage/Core (= 5.13.2)
@@ -6,12 +9,14 @@ PODS:
   - YJPodTest (0.1.0)
 
 DEPENDENCIES:
+  - Charts
   - Masonry
   - SDWebImage
   - YJPodTest (from `https://github.com/Manchitor/YJPodTest.git`)
 
 SPEC REPOS:
   https://cdn.cocoapods.org/:
+    - Charts
     - Masonry
     - SDWebImage
 
@@ -25,10 +30,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/Manchitor/YJPodTest.git
 
 SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
   YJPodTest: 67f432812fabb7f1cb1690bfa6d87b129b352f7c
 
-PODFILE CHECKSUM: c3f2359616bf4937322f3dc34710ca68747780e1
+PODFILE CHECKSUM: e41e671962240061984eaebce584c8ae2a171f6b
 
 COCOAPODS: 1.11.3

@@ -13,4 +13,9 @@
 #import "Masonry.h"
 #import <SDWebImage.h>
 
+
+//Charts图表
+#import "Tools-Bridging-Header.h"
+#import "Charts-Swift.h"
+
 #endif /* SBToolsPch_pch */

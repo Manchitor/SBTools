@@ -17,6 +17,14 @@
 #import "SBAssetExportViewController.h"
 #import "SBPhotoRevealViewController.h"
 #import "SBAISpeechViewController.h"
+#import "SBVisionTextViewController.h"
+#import "SBChartsMainViewController.h"
+
+#import "SBBubleMoveViewController.h"
+#import "SBBubbleViewController.h"
+
+#import "SBRadarChartsViewController.h"
+#import "SBRadarCustomChartsViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -32,9 +40,9 @@
     [super viewDidLoad];
     
     [self setupconfig];//初始化页面配置
-        
+    
     [self setupui];//初始化UI
-        
+    
     [self loaddata];//请求数据
 }
 
@@ -43,7 +51,7 @@
     self.navigationItem.title = @"SBTool示例";
     
     self.view.backgroundColor = SBCOLORHEX(0xf8f8f8, 1);
-
+    
 }
 
 #pragma mark ----------初始化页面
@@ -68,11 +76,23 @@
     [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBNumberScroller" ExampleDesc:@"数字滚动展示控件；"]];
     
     [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBAssetExportSession" ExampleDesc:@"视频压缩1.采用 AVAssetReader和AVAssetWriter 2.采用 AVAssetExportSession；"]];
-
+    
     [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBPhotoReveal" ExampleDesc:@"大图查看器，支持放大、双击、捏合手势、保存到相册，依赖SDWebImage图片下载，支持UIImage与NSString格式数据；"]];
     
-    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBSpeechAudio" ExampleDesc:@"实施语音转文字、文字播报朗读（系统声音）；"]];
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBSpeechAudio" ExampleDesc:@"实时语音转文字、文字播报朗读（系统声音）；"]];
     
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBVisionText" ExampleDesc:@"文字提取，基于Vision.framework从图片中提取文字，目前仅支持 iOS 13以上；"]];
+    
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBCharts" ExampleDesc:@"基于Charts的图表示例，包含各种图表；"]];
+    
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBBubbleAnimation" ExampleDesc:@"气泡动画效果，漂浮不定。来回随机移动；"]];
+    
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBBubbleMoveAnimation" ExampleDesc:@"气泡动画效果，随机距离移动，上下左右来回移动，碰壁折返；"]];
+    
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBRadarCharts" ExampleDesc:@"气自定义雷达视图；"]];
+    
+    [self.dataArray addObject:[MainCustomModel setupExampleTitle:@"SBRadarChart" ExampleDesc:@"气自定义雷达视图；"]];
+
     
     [self.tableview reloadData];
 }
@@ -104,6 +124,24 @@
         [self presentViewController:vc animated:YES completion:nil];
     }else if ([model.exampleTitle isEqualToString:@"SBSpeechAudio"]){
         SBAISpeechViewController *vc = [[SBAISpeechViewController alloc] initWithNibName:NSStringFromClass([SBAISpeechViewController class]) bundle:[NSBundle mainBundle]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBVisionText"]){
+        SBVisionTextViewController *vc = [[SBVisionTextViewController alloc] initWithNibName:NSStringFromClass([SBVisionTextViewController class]) bundle:[NSBundle mainBundle]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBCharts"]){
+        SBChartsMainViewController *vc = [[SBChartsMainViewController alloc] initWithNibName:NSStringFromClass([SBChartsMainViewController class]) bundle:[NSBundle mainBundle]];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBBubbleAnimation"]){
+        SBBubbleViewController *vc = [[SBBubbleViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBBubbleMoveAnimation"]){
+        SBBubleMoveViewController *vc = [[SBBubleMoveViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBRadarCharts"]){
+        SBRadarChartsViewController *vc = [[SBRadarChartsViewController alloc]init];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else if ([model.exampleTitle isEqualToString:@"SBRadarChart"]){
+        SBRadarCustomChartsViewController *vc = [[SBRadarCustomChartsViewController alloc]init];
         [self.navigationController pushViewController:vc animated:YES];
     }
 }
@@ -143,4 +181,6 @@
     }
     return _dataArray;
 }
+
+
 @end

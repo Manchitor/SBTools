@@ -9,7 +9,8 @@ target 'Tools' do
   pod 'Masonry'
   
   pod 'SDWebImage'
-
+  
+  pod 'Charts'
 
   pod 'YJPodTest', :git => 'https://github.com/Manchitor/YJPodTest.git'
 end
