@@ -119,5 +119,7 @@
     int index = (int)value%arr.count;
     return arr[index];
 }
-
+-(void)dealloc{
+    
+}
 @end

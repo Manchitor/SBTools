@@ -29,8 +29,10 @@
     CGFloat radius = self.frame.size.width/2.0;
     
     //moke 数据
-    NSMutableArray *datas = [NSMutableArray arrayWithArray:@[@"90",@"50",@"80",@"50",@"90",@"50",@"70",@"90",@"30"]];
+    NSMutableArray *datas = [NSMutableArray arrayWithArray:@[@"40",@"50",@"80",@"50",@"90",@"50",@"70",@"90",@"30"]];
     
+    NSMutableArray *titles = [NSMutableArray arrayWithArray:@[@"阴虚",@"痰湿",@"温热",@"血瘀",@"气郁",@"特禀",@"平和",@"气虚",@"阳虚"]];
+
     //圆环个数
     int count = 5;
     
@@ -70,10 +72,18 @@
     
     //3.获取数据源的每项point
     NSMutableArray *pointArray = [[NSMutableArray alloc] init];
+    NSMutableArray *itemPointArray = [[NSMutableArray alloc] init];
+
     for (int index = 0; index < datas.count; index++) {
+        //data point
         CGPoint point = [self calcCircleCoordinateWithCenter:CGPointMake(radius, radius) andWithAngle:index*(360/datas.count) andWithRadius:[datas[index] floatValue]/maxValue *radius];
         NSValue *value = [NSValue valueWithCGPoint:point];
         [pointArray addObject:value];
+        
+        //item point
+        CGPoint itemPoint = [self calcCircleCoordinateWithCenter:CGPointMake(radius, radius) andWithAngle:index*(360/datas.count) andWithRadius:radius];
+        NSValue *valuePoint = [NSValue valueWithCGPoint:itemPoint];
+        [itemPointArray addObject:valuePoint];
     }
     
     //4.绘制图层
@@ -114,7 +124,39 @@
     }
     [[[UIColor redColor] colorWithAlphaComponent:0.3] setFill];
     [path fill];
-
+    
+    
+    //6.绘制每项的标题
+    for (int index = 0; index < itemPointArray.count; index++) {
+        
+        CGPoint p = [itemPointArray[index] CGPointValue];
+        CGFloat width = [SBTools sb_string_max_size:[UIFont systemFontOfSize:12] text:titles[index] maxWidth:MAXFLOAT].width;
+        UILabel *item = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, 20)];
+        item.text = titles[index];
+        item.font = [UIFont systemFontOfSize:12];
+        
+        CGFloat angle = index*(360/datas.count);//角度
+        
+        if (angle == 0) {
+            item.center = CGPointMake(p.x + width/2.0, p.y);
+        }else if (angle < 90){
+            item.center = CGPointMake(p.x + width/2.0, p.y - 10);
+        }else if (angle == 90){
+            item.center = CGPointMake(p.x , p.y-10);
+        }else if (angle < 180){
+            item.center = CGPointMake(p.x - width/2.0, p.y - 10);
+        }else if (angle == 180){
+            item.center = CGPointMake(p.x - width/2.0 , p.y);
+        }else if (angle < 270){
+            item.center = CGPointMake(p.x - width/2.0 , p.y + 10);
+        }else if (angle == 270){
+            item.center = CGPointMake(p.x , p.y+10);
+        }else if (angle > 270){
+            item.center = CGPointMake(p.x + width/2.0 , p.y + 10);
+        }
+        
+        [self addSubview:item];
+    }
     
 }
 
