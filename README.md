@@ -9,6 +9,8 @@ SBTools文件目录
     
     SBTools+Base64 ：对string或data进行base64加密、解密 (采用苹果默认规范：RFC 4648)；
     
+    SBTools+AES ：AES加密(ECB、CBC、CFB、OFB)，填充模式（PKCS7Pading和NoPading（不填充）。这里借鉴大佬的博客 aescfb加密_iOS AES加密(主要使用CFB模式) ，实现PKCS7Pading、ZeroPadding 、ANSIX923、ISO10126四种填充方式。），密钥（128、192、256三种长度都支持）;
+    
     SBTools+Device ：获取设备型号、是否有摄像头、物理内存、cpu个数、运行内存、带宽、mac地址、显示屏 等信息；
     
     SBTools+HTML ： 去掉html格式字符串的标签（'<div>html内容</div>' 处理结果后返回：'html内容' ）；
@@ -95,6 +97,34 @@ SBToolsKit文件目录
         
  
 SBToolLibrary文件目录：
+
+    SBRadarChart目录下：
+        
+        自定义圆形背景虚线雷达图；
+        
+    SBRadarCharts目录下：
+    
+        自定义圆形背景虚线雷达图（支持大小图层，图层曲线连接）；
+        
+    SBPhotoReveal目录下：
+        
+        查看大图：（支持数组，支持保存，支持缩放、捏合、点击手势）；
+        
+    SBSpeechAudio目录下：
+    
+        基于speech框架的录音与文字朗读，文字播报；
+        
+    SBVisonText目录下：
+    
+        基于vison框架的图片识别，提取图片中的文字；
+        
+    SBCharts目录：
+    
+        基于Charts库的demo实例，附带部分注释；
+        
+    SBBubbleAnimation目录下：
+        
+        气泡浮动动画，气泡上下左右移动撞墙回弹动画（支持随机位置，随机大小，随机方向，随机移动距离，随机速度）；
 
     SBSignature目录下：
         
